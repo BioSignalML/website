@@ -1,0 +1,765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> 
+
+ <head>
+  <title>BioSignalML: An ontology for working with biosignals</title>
+  <link rel="stylesheet" type="text/css" href="/css/w3cbase.css" />
+  <link rel="stylesheet" type="text/css" href="/css/ontology.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </head>
+
+ <body>
+
+  <div class="head">
+
+   <a href="http://www.biosignalml.org/">
+    <img src="/images/biosignalml.png"
+         alt="BioSignalML" width="153" height="74" id="logo"/>
+   </a>
+
+   <h1 id="title">BioSignalML Ontology</h1>
+
+   <h2 id="subtitle">An ontology for working with biosignals</h2>
+
+   <h2 id="mymw-doctype">Working Draft - 22 May 2010</h2>
+
+   <dl>
+    <dt>This version:</dt>
+    <dd>
+     <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20110522">http://www.biosignalml.org/ontologies/2011/04/biosignalml-20110522</a>
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20110522.rdf">rdf</a>)
+    </dd>
+    <dt>Latest version:</dt>
+    <dd>
+     <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml">http://www.biosignalml.org/ontologies/2011/04/biosignalml</a>
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.rdf">RDF</a>)
+    </dd>
+    <dt>Last Update:</dt>
+    <dd>Date: 22 May 2011</dd>
+    <dt>Editors:</dt>
+    <dd>David Brooks, Auckland Bioengineering Institute</dd>
+    <dt>Acknowledgements:</dt>
+    <dd>See <a href="#acknowledgments">acknowledgements</a></dd>
+   </dl>
+
+   <p class="copyright">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+     <img alt="Creative Commons Licence" style="border-width:0; float:right;"
+      src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a>
+    Copyright &copy; 2011 by David Brooks.
+    This work is licensed under a
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons
+    Attribution-ShareAlike 3.0 Unported License</a>, so you are granted to use, copy,
+    distribute, transmit and adapt this work, but you must attribute the work to the
+    original authors and distribute the resulting work under similar terms.
+   </p>
+   <p class="copyright" style="clear:both">
+    This work is supported by ...
+   </p>
+
+  </div>
+
+  <hr />
+  <h2 id="abstract">Abstract</h2>
+  <p>This specification defines the ....</p>
+
+  <h2 id="status">Status of this Document</h2>
+  <p>
+    <strong>This is a work in progress!</strong> This document is changing
+    on a daily if not hourly basis. Comments are very welcome, please send
+    them to the authors. Thank you.
+  </p>
+
+  <h2 id="contents">Table of Contents</h2>
+  <ol id="toc">
+   <li><a href="#intro">Introduction</a>
+<!--
+    <ol>
+     <li><a href="#s11">X</a></li>
+     <li><a href="#s12">Y</a></li>
+     <li>
+      <a href="#s13">Z</a>
+      <ol>
+       <li><a href="#s131">K</a></li>
+       <li><a href="#s132">M</a></li>
+      </ol>
+     </li>
+    </ol>
+-->
+   </li>
+   <li><a href="#sec-glance">BioSignalML ontology at a glance</a></li>
+   <li>
+    <a href="#overview">BioSignalML ontology overview</a>
+    <ol>
+     <li><a href="#s31">Example</a></li>
+    </ol>
+   </li>
+   <li><a href="#reference">Cross-reference for BioSignalML classes and properties</a></li>
+  </ol>
+
+  <h3>Appendices</h3>
+  <ol id="appendix">
+   <li><a href="#references">References</a></li>
+   <li><a href="#changes">Changes in this version</a> (Non-Normative)</li>
+   <li><a href="#acknowledgements">Acknowledgements</a> (Non-Normative)</li>
+  </ol>
+
+  <hr />
+
+  <div class="body">
+
+   <div class="div1">
+    <h2 id="intro">1 Introduction</h2>
+   </div>
+<!--
+   <div class="div2">
+    <h2 id="s11">1.1 X</h2>
+   </div>
+
+   <div class="div2">
+    <h2 id="s12">1.2 Y</h2>
+   </div>
+
+   <div class="div2">
+    <h2 id="s13">1.3 Z</h2>
+
+    <div class="div3">
+     <h3 id="s131">1.3.1 K</h3>
+    </div>
+
+    <div class="div3">
+     <h3 id="s132">1.3.2 M</h3>
+    </div>
+-->
+   </div>
+
+   <div class="glance">
+    <h2 id="sec-glance">2. BioSignalML ontology at a glance</h2>
+
+    <p>An alphabetical index of BioSignalML terms, by class (concepts) and by property 
+    (relationships, attributes), are given below. All the terms are hyperlinked 
+    to their detailed description for quick reference.</p>
+
+<!-- The list of classes and properties goes here -->
+<div style="padding: 1em; border: dotted; background-color: #ddd;"><p>Classes:  <a href="#term_Annotation">Annotation</a>,  <a href="#term_BP_Filter">BP_Filter</a>,  <a href="#term_Dataset">Dataset</a>,  <a href="#term_Device">Device</a>,  <a href="#term_Event">Event</a>,  <a href="#term_Filter">Filter</a>,  <a href="#term_Format">Format</a>,  <a href="#term_HP_Filter">HP_Filter</a>,  <a href="#term_LP_Filter">LP_Filter</a>,  <a href="#term_Notch_Filter">Notch_Filter</a>,  <a href="#term_Recording">Recording</a>,  <a href="#term_Repository">Repository</a>,  <a href="#term_Resolution">Resolution</a>,  <a href="#term_Resource">Resource</a>,  <a href="#term_Signal">Signal</a>,  <a href="#term_Simulation">Simulation</a>,  <a href="#term_Source">Source</a>,  <a href="#term_Transducer">Transducer</a>,  <a href="#term_Type">Type</a>,  <a href="#term_UnitOfMeasure">UnitOfMeasure</a>, 
+</p><p>Properties:  <a href="#term_annotation">annotation</a>,  <a href="#term_filter">filter</a>,  <a href="#term_format">format</a>,  <a href="#term_maxFrequency">maxFrequency</a>,  <a href="#term_maxValue">maxValue</a>,  <a href="#term_minFrequency">minFrequency</a>,  <a href="#term_minValue">minValue</a>,  <a href="#term_offset">offset</a>,  <a href="#term_recording">recording</a>,  <a href="#term_repository">repository</a>,  <a href="#term_resolution">resolution</a>,  <a href="#term_sampleRate">sampleRate</a>,  <a href="#term_scale">scale</a>,  <a href="#term_signal">signal</a>,  <a href="#term_signalCount">signalCount</a>,  <a href="#term_source">source</a>,  <a href="#term_time">time</a>,  <a href="#term_type">type</a>,  <a href="#term_units">units</a>, 
+</p><p>Instances:  <a href="#term_BioSignalML">BioSignalML</a>,  <a href="#term_BP">BP</a>,  <a href="#term_ECG">ECG</a>,  <a href="#term_EDF">EDF</a>,  <a href="#term_EDFplus">EDFplus</a>,  <a href="#term_EEG">EEG</a>,  <a href="#term_example-notes">example-notes</a>,  <a href="#term_FieldML">FieldML</a>,  <a href="#term_MFER">MFER</a>,  <a href="#term_RAW">RAW</a>,  <a href="#term_SCP_ECG">SCP_ECG</a>,  <a href="#term_SDF">SDF</a>,  <a href="#term_SignalStream">SignalStream</a>,  <a href="#term_WFDB">WFDB</a>, 
+</p>
+</div>
+<!-- End of the terms list -->
+   </div>
+
+   <h2 id="overview">3. BioSignalML ontology overview</h2>
+
+   <p>The BioSignalML definitions presented here are ...</p>
+
+   <h3 id="s31">3.1. Example</h3>
+<!--
+   <p>Here is a very basic document describing a foo:</p>
+
+   <div class="example" style="white-space: pre-wrap;">
+    <pre>
+     &lt;rdf:RDF /&gt;
+    </pre>
+   </div>
+-->
+   <h2 id="reference">4. Cross-reference of BioSignalML classes and properties</h2>
+
+<!-- The following is the script-generated list of classes and properties -->
+<div class="specterm" id="term_Annotation">
+<h3>Class: bsml:Annotation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation</a></p><p><em></em> -  </p>
+<dl><dt>sub-class-of:</dt><dd><a href="http://www.w3.org/2002/07/owl#Thing" style="font-family: monospace;">owl:Thing</a></dd><dt>in-domain-of:</dt><dd><a href="#term_signal" style="font-family: monospace;">bsml:signal</a></dd><dt>in-range-of:</dt><dd><a href="#term_annotation" style="font-family: monospace;">bsml:annotation</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_BP_Filter">
+<h3>Class: bsml:BP_Filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter</a></p><p><em></em> - A band-pass filter. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Filter" style="font-family: monospace;">bsml:Filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Dataset">
+<h3>Class: bsml:Dataset</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset</a></p><p><em></em> - A collection of data files or web services that contain Recording or Signal information. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Source" style="font-family: monospace;">bsml:Source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Device">
+<h3>Class: bsml:Device</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device</a></p><p><em></em> - The physical device that saved the output of a transducer into a format able to be stored. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Source" style="font-family: monospace;">bsml:Source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Event">
+<h3>Class: bsml:Event</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event</a></p><p><em></em> - An Event is a time-stamped Annotation. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Annotation" style="font-family: monospace;">bsml:Annotation</a></dd><dt>in-domain-of:</dt><dd><a href="#term_time" style="font-family: monospace;">bsml:time</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Filter">
+<h3>Class: bsml:Filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter</a></p><p><em></em> -  </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-range-of:</dt><dd><a href="#term_filter" style="font-family: monospace;">bsml:filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Format">
+<h3>Class: bsml:Format</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format</a></p><p><em></em> -  </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-range-of:</dt><dd><a href="#term_format" style="font-family: monospace;">bsml:format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_HP_Filter">
+<h3>Class: bsml:HP_Filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter</a></p><p><em></em> - A high-pass filter. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Filter" style="font-family: monospace;">bsml:Filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_LP_Filter">
+<h3>Class: bsml:LP_Filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter</a></p><p><em></em> - A low-pass filter. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Filter" style="font-family: monospace;">bsml:Filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Notch_Filter">
+<h3>Class: bsml:Notch_Filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter</a></p><p><em></em> - A notch (blocking) filter. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Filter" style="font-family: monospace;">bsml:Filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Recording">
+<h3>Class: bsml:Recording</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording</a></p><p><em></em> - A set of signals that have been recorded together. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-domain-of:</dt><dd><a href="#term_format" style="font-family: monospace;">bsml:format</a></dd><dd><a href="#term_repository" style="font-family: monospace;">bsml:repository</a></dd><dd><a href="#term_signalCount" style="font-family: monospace;">bsml:signalCount</a></dd><dt>in-range-of:</dt><dd><a href="#term_recording" style="font-family: monospace;">bsml:recording</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Repository">
+<h3>Class: bsml:Repository</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Repository">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Repository</a></p><p><em></em> - A container for recordings of signals. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-range-of:</dt><dd><a href="#term_repository" style="font-family: monospace;">bsml:repository</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Resolution">
+<h3>Class: bsml:Resolution</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Resolution">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Resolution</a></p><p><em></em> -  </p>
+<dl><dt>in-range-of:</dt><dd><a href="#term_resolution" style="font-family: monospace;">bsml:resolution</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Resource">
+<h3>Class: bsml:Resource</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Resource">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Resource</a></p><p><em></em> -  </p>
+<dl><dt>in-domain-of:</dt><dd><a href="#term_annotation" style="font-family: monospace;">bsml:annotation</a></dd><dd><a href="#term_source" style="font-family: monospace;">bsml:source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Signal">
+<h3>Class: bsml:Signal</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal</a></p><p><em></em> - A time-series obtained by sampling an analogue quantity. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-domain-of:</dt><dd><a href="#term_filter" style="font-family: monospace;">bsml:filter</a></dd><dd><a href="#term_recording" style="font-family: monospace;">bsml:recording</a></dd><dd><a href="#term_resolution" style="font-family: monospace;">bsml:resolution</a></dd><dd><a href="#term_type" style="font-family: monospace;">bsml:type</a></dd><dd><a href="#term_units" style="font-family: monospace;">bsml:units</a></dd><dd><a href="#term_maxFrequency" style="font-family: monospace;">bsml:maxFrequency</a></dd><dd><a href="#term_maxValue" style="font-family: monospace;">bsml:maxValue</a></dd><dd><a href="#term_minFrequency" style="font-family: monospace;">bsml:minFrequency</a></dd><dd><a href="#term_minValue" style="font-family: monospace;">bsml:minValue</a></dd><dd><a href="#term_offset" style="font-family: monospace;">bsml:offset</a></dd><dd><a href="#term_sampleRate" style="font-family: monospace;">bsml:sampleRate</a></dd><dd><a href="#term_scale" style="font-family: monospace;">bsml:scale</a></dd><dt>in-range-of:</dt><dd><a href="#term_signal" style="font-family: monospace;">bsml:signal</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Simulation">
+<h3>Class: bsml:Simulation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation</a></p><p><em></em> - A computer simulation or modelling process that created the Signal or Recording. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Source" style="font-family: monospace;">bsml:Source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Source">
+<h3>Class: bsml:Source</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source</a></p><p><em></em> - The source (ie. device, transducer, electrode, simulation, etc) of a Signal or Recording. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>in-range-of:</dt><dd><a href="#term_source" style="font-family: monospace;">bsml:source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Transducer">
+<h3>Class: bsml:Transducer</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer</a></p><p><em></em> - What actually captured a signal -- an electrode, sensor, etc. </p>
+<dl><dt>sub-class-of:</dt><dd><a href="#term_Source" style="font-family: monospace;">bsml:Source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_Type">
+<h3>Class: bsml:Type</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Type">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Type</a></p><p><em></em> -  </p>
+<dl><dt>in-range-of:</dt><dd><a href="#term_type" style="font-family: monospace;">bsml:type</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_UnitOfMeasure">
+<h3>Class: bsml:UnitOfMeasure</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure</a></p><p><em></em> - The class used to represent the types of measurement units used by signals. We define sublasses for common measurement units; these may possibly be defined as being equivalent to entities in a specialised units of measure ontology (eg. http://www.foodinformatics.nl/om-qc-1.2.owl). </p>
+<dl><dt>in-range-of:</dt><dd><a href="#term_units" style="font-family: monospace;">bsml:units</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_annotation">
+<h3>Property: bsml:annotation</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#annotation">http://www.biosignalml.org/ontologies/2011/04/biosignalml#annotation</a></p><p><em></em> - What can be annotated? And do all annotations have to be instances of the Annotation class? What about free-form text?? </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>Range:</dt> <dd><a href="#term_Annotation" style="font-family: monospace;">bsml:Annotation</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_filter">
+<h3>Property: bsml:filter</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#filter</a></p><p><em></em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="#term_Filter" style="font-family: monospace;">bsml:Filter</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_format">
+<h3>Property: bsml:format</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">http://www.biosignalml.org/ontologies/2011/04/biosignalml#format</a></p><p><em></em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Recording" style="font-family: monospace;">bsml:Recording</a></dd><dt>Range:</dt> <dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_maxFrequency">
+<h3>Property: bsml:maxFrequency</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency</a></p><p><em></em> - The maximum frequency, in Hertz, contained in the signal. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_maxValue">
+<h3>Property: bsml:maxValue</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue</a></p><p><em></em> - The maximum value of the signal. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_minFrequency">
+<h3>Property: bsml:minFrequency</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency</a></p><p><em></em> - The minimum frequency, in Hertz, contained in the signal. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_minValue">
+<h3>Property: bsml:minValue</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue</a></p><p><em></em> - The minimum value of the signal. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_offset">
+<h3>Property: bsml:offset</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#offset">http://www.biosignalml.org/ontologies/2011/04/biosignalml#offset</a></p><p><em></em> - DOES THIS BELONG HERE? OR PART OF NUMERIC REPRESENTATION OF DATA?? </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_recording">
+<h3>Property: bsml:recording</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording</a></p><p><em></em> - The Recording a Signal is part of. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="#term_Recording" style="font-family: monospace;">bsml:Recording</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_repository">
+<h3>Property: bsml:repository</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#repository">http://www.biosignalml.org/ontologies/2011/04/biosignalml#repository</a></p><p><em></em> - The Repository a Recording is part of. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Recording" style="font-family: monospace;">bsml:Recording</a></dd><dt>Range:</dt> <dd><a href="#term_Repository" style="font-family: monospace;">bsml:Repository</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_resolution">
+<h3>Property: bsml:resolution</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#resolution">http://www.biosignalml.org/ontologies/2011/04/biosignalml#resolution</a></p><p><em></em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="#term_Resolution" style="font-family: monospace;">bsml:Resolution</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_sampleRate">
+<h3>Property: bsml:sampleRate</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sampleRate">http://www.biosignalml.org/ontologies/2011/04/biosignalml#sampleRate</a></p><p><em></em> - The rate, in Hertz, a uniform signal has been sampled at. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_scale">
+<h3>Property: bsml:scale</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#scale">http://www.biosignalml.org/ontologies/2011/04/biosignalml#scale</a></p><p><em></em> - DOES THIS BELONG HERE? OR PART OF NUMERIC REPRESENTATION OF DATA?? </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#double" style="font-family: monospace;">xsd:double</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_signal">
+<h3>Property: bsml:signal</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signal">http://www.biosignalml.org/ontologies/2011/04/biosignalml#signal</a></p><p><em></em> - Assigns a Signal to an annotation. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Annotation" style="font-family: monospace;">bsml:Annotation</a></dd><dt>Range:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_signalCount">
+<h3>Property: bsml:signalCount</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalCount">http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalCount</a></p><p><em></em> - The number of signals in a recording. </p>
+<dl><dt>OWL Type:</dt><dd>DatatypeProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Recording" style="font-family: monospace;">bsml:Recording</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2001/XMLSchema#integer" style="font-family: monospace;">xsd:integer</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_source">
+<h3>Property: bsml:source</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">http://www.biosignalml.org/ontologies/2011/04/biosignalml#source</a></p><p><em></em> - The source of a Signal or Recording. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Resource" style="font-family: monospace;">bsml:Resource</a></dd><dt>Range:</dt> <dd><a href="#term_Source" style="font-family: monospace;">bsml:Source</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_time">
+<h3>Property: bsml:time</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#time">http://www.biosignalml.org/ontologies/2011/04/biosignalml#time</a></p><p><em></em> - Assigns a time Instant or Interval to an Event. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Event" style="font-family: monospace;">bsml:Event</a></dd><dt>Range:</dt> <dd><a href="http://www.w3.org/2006/time#TemporalEntity" style="font-family: monospace;">http://www.w3.org/2006/time#TemporalEntity</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_type">
+<h3>Property: bsml:type</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#type">http://www.biosignalml.org/ontologies/2011/04/biosignalml#type</a></p><p><em></em> -  </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="#term_Type" style="font-family: monospace;">bsml:Type</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_units">
+<h3>Property: bsml:units</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">http://www.biosignalml.org/ontologies/2011/04/biosignalml#units</a></p><p><em></em> - The physical units that are represented by a signal's data values. </p>
+<dl><dt>OWL Type:</dt><dd>ObjectProperty</dd>
+<dt>Domain:</dt> <dd><a href="#term_Signal" style="font-family: monospace;">bsml:Signal</a></dd><dt>Range:</dt> <dd><a href="#term_UnitOfMeasure" style="font-family: monospace;">bsml:UnitOfMeasure</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_BioSignalML">
+<h3>Instance: bsml:BioSignalML</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BioSignalML">http://www.biosignalml.org/ontologies/2011/04/biosignalml#BioSignalML</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_BP">
+<h3>Instance: bsml:BP</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP">http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Type" style="font-family: monospace;">bsml:Type</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_ECG">
+<h3>Instance: bsml:ECG</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Type" style="font-family: monospace;">bsml:Type</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EDF">
+<h3>Instance: bsml:EDF</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EDFplus">
+<h3>Instance: bsml:EDFplus</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_EEG">
+<h3>Instance: bsml:EEG</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Type" style="font-family: monospace;">bsml:Type</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_example-notes">
+<h3>Instance: bsml:example-notes</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#example-notes">http://www.biosignalml.org/ontologies/2011/04/biosignalml#example-notes</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#Thing" style="font-family: monospace;">owl:Thing</a></dd><dd><a href="#term_Annotation" style="font-family: monospace;">bsml:Annotation</a></dd><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_FieldML">
+<h3>Instance: bsml:FieldML</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML">http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_MFER">
+<h3>Instance: bsml:MFER</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER">http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_RAW">
+<h3>Instance: bsml:RAW</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW">http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SCP_ECG">
+<h3>Instance: bsml:SCP_ECG</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SDF">
+<h3>Instance: bsml:SDF</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_SignalStream">
+<h3>Instance: bsml:SignalStream</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalStream">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalStream</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+<div class="specterm" id="term_WFDB">
+<h3>Instance: bsml:WFDB</h3>
+<p style="font-family:monospace; font-size:0.em;">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB">http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB</a></p><p><em></em> -  </p>
+<dl><dt>RDF Type:</dt><dd><a href="http://www.w3.org/2002/07/owl#NamedIndividual" style="font-family: monospace;">owl:NamedIndividual</a></dd><dd><a href="#term_Format" style="font-family: monospace;">bsml:Format</a></dd></dl>
+<p style="float: right; font-size: small;">[<a href="#sec-glance">back to top</a>]</p>
+
+
+
+</div>
+
+
+<!-- End of the terms list -->
+
+   <div class="back">
+    <div class="div1">
+     <h2 id="references">A References</h2>
+<!--
+     <dl>
+      <dt class="label" id="ref-some">name</dt>
+      <dd>
+       <em><a href="http://.../">long name</a></em> description...
+      </dd>
+      <dt class="label" id="ref-rfc2119">IETF RFC 2119</dt>
+      <dd>
+       <em><a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119: Key words
+       for use in RFCs to Indicate Requirement Levels</a></em>. Internet
+       Engineering Task Force, 1997 (see http://www.ietf.org/rfc/rfc2119.txt).
+      </dd>
+     </dl>
+-->
+    </div>
+   </div>
+
+   <div class="div1">
+    <h2 id="changes">B Changes in this version (Non-Normative)</h2>
+    <ul>
+     <li><p>changelog</p></li>
+    </ul>
+   </div>
+
+   <div class="div1">
+    <h2><a id="acknowledgments"></a>C Acknowledgements (Non-Normative)</h2>
+    <p>
+     This document was produced with the participation of ...
+    </p>
+   </div>
+
+  </div>
+
+  <div id="footer">
+  </div>
+
+ </body>
+
+</html>
+
+<!-- specification regenerated by SpecGen5 at 23:11:34 05/22/11 NZST -->
