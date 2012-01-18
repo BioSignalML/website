@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Signal Naming</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Recording.html">Recording</a></span> | <span class="parent-node"><a href="Signal.html">Signal</a></span> | <span class="parent-node"><a href="Thesis.html">Thesis</a></span></span><br /><br />
+<a name=".h0"></a><h2>Signal Naming</h2>
+<ul>
+<li />A <span class="wiki-link"><a href="Signal.html">Signal</a></span> is considered to be a single data stream from some source (transducer, simulation, etc).
+<li />A <span class="wiki-link"><a href="Recording.html">Recording</a></span> is a container for a set of Signals all of which have been recorded over the same time period and pertain to the one subject (or simulation run).
+<li />Each Signal is part of some Recording.
+<li />Each Signal has an identifier that is unique within the Recording that the Signal is part of.
+<li />Each Recording has an URI (<span class="url-link"><a href="http://tools.ietf.org/html/rfc3986">http://tools.ietf.org/html/rfc3986</a></span>) that has no query or fragment component. A recording URI should not end in a slash ("/").
+<li />A Signal's URI is formed by adding its identifier as the query component of a Recording's URI.
+<li />The fragment identifier of a Signal's or Recording's URI is used to denote a range of times for which to retrieve information.
+<li />A time range consists of a sequence of time intervals and instants seperated by commas (",")
+<li />A time instant is given as the duration from the start of the Recording (that the Signal is in) to the time point.
+<li />A time interval is either in the form [ start ":" length ] or [ start "-" end ] where 'start' and 'end' are the duration from the start of the Recording and 'length' is the duration of the interval.
+<li />Durations are formatted as an XML Schema Datatype duration (<span class="url-link"><a href="http://www.w3.org/TR/xmlschema-2/#duration">http://www.w3.org/TR/xmlschema-2/#duration</a></span> (ISO 8601 extended format)). <br />
+</ul>
+<a name=".h1373"></a><h3>Examples:</h3>
+<ul>
+<li />A recording: http://my.domain.org/path/to/recording
+<li />The ecg signal in the recording: http://my.domain.org/path/to/recording?ecg
+<li />Signal 3 in swa49.edf: file:///Users/dave/Desktop/SWA/swa49/swa49.edf?3
+<li />Signal 3 in swa49.edf for the 23.14 second long interval starting at 5 minutes 3.57 seconds: file:///Users/dave/Desktop/SWA/swa49/swa49.edf?3#PT5M3.57S-PT23.14
+<li />A relative reference to the recording and specifying a time interval: file://./swa49/swa49.edf#PT5M3.57S-PT23.14<br />
+</ul>
+<a name=".h1887"></a><h3>Potential problems</h3>
+<ul>
+<li />Need to carefully define how relative references work -- best to do so within Recording and Signal classes (via a 'resolve()' method).
+<li />Do we only allow http: schemes? (Or introduce a bsml: or signal: stream ??). In which case how do we refer to actual data files? Do we have to first import (or attach ?) a data file to a repository in order to access its contents (both data and metadata)?? Or at least, in order to use the above signal naming conventions.</ul>
+    </body>
+</html>

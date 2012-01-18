@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Store</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Repositories.html">Repositories</a></span> | <span class="parent-node"><a href="WhatIHaveBeenDoing.html">WhatIHaveBeenDoing</a></span></span><br /><br />
+<a name=".h0"></a><h2>Store</h2>
+A Store is the container used to hold and access signals and recordings. A recording may either be held within a store (by being imported), or it may be linked or associated with a store whereby the recording's information (signals/data/metadata) is able to be accessed via the store, without an actual import of data. In this case the link is terminated at the end of a session.<br />
+<br />
+Directory structure:<pre>  store_directory/
+    recordings/
+      # sub-directory holding imported recordings (in HDF5 format?)
+    metadata/
+      # sub-directory with metadata held as a Jena repository
+</pre>
+Access via API:<pre>  val store = new Store("path_to_store_directory")
+  ...
+  store.close()
+</pre>
+Different views of a Store and its contents:<ul>
+<li />Signal/recording files
+<li />Metadata
+<li />Streaming
+<li />Web services (browsing, data provider...)
+<li />Import/Export</ul>
+    </body>
+</html>

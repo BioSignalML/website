@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>WhatIHaveBeenDoing</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Thesis.html">Thesis</a></span></span><br /><br />
+<a name=".h0"></a><h2>Status Report</h2>
+<ul>
+<li />28 Feb 2010<ul>
+<li />Attended 2010 CellML workshop
+<li />Dropped notion of <span class="wiki-link"><a href="Repositories.html">Repositories</a></span> in favour of <span class="wiki-link"><a href="Store.html">Stores</a></span>.<br />
+</ul>
+
+<li />2 Feb 2010<ul>
+<li />Rework Time.Point code to the concept of an Instant being a point on a timeline.
+<li />Implement mappings between timelines for translation maps. If two timelines are related by a sequence of mappings then points may be compared between the two timelines.
+<li />Continue debugging passing of signal data to web browser... (Now have source level debugging system available on much faster system than MacBook).
+<li />Setup ability to publish these notes.  <br />
+</ul>
+
+<li />21 Jan 2010<ul>
+<li />Formally (using Scala) separate 'Time', that has been of type Long (and storing a tick), into Time.Point and Time.Duration classes, so that the compiler can check the correct use of time quantities.<br />
+</ul>
+
+<li />20 Jan 2010<ul>
+<li />Have signal data being passed to web browser for graphing
+<li />Timescales are not right -- confusion between times in seconds; in our base ticks; and as sample rate ticks...
+<li />Need to easily identify trace with signal -- via colour? via label at mouse tip? via highlighting trace when mouseover label? (easiest, but also use colour). How to specify trace colours -- use a stylesheet? (.Traces #Trace_ID as locators ??)
+<li />Need to scroll/pan with time.
+<li />Need to scale and translate individual traces (both with mouse and initial size/position (for which we could use a stylesheet)). (And stylesheet becomes part of viewing (ie. graphing) metadata -- cf. <span class="url-link"><a href="http://www.cellml.org/specifications/metadata/graphs">CellML graphing metadata</a></span>)<br />
+</ul>
+
+<li />19 Jan 2010<ul>
+<li />Code integration -- bringing together different components into the one software library:<ul>
+<li />Core classes defining an abstract signal.
+<li />An abstract metadata model along with an implementation using Jena.
+<li />An abstract data file model along with an implementation for F&amp;P's Minerva format (which is <b>not</b> EDF)</ul>
+
+<li />Web interface -- prototype application using software library:<ul>
+<li />For repository browsing and viewing of both metadata and signal data.
+<li />Currently debugging...</ul>
+
+<li />Difficulties:<ul>
+<li />Using latest development versions of Scala language and Lift web framework which are pre-beta<ul>
+<li />Able to use new features and performance enhancements
+<li />At bleeding-edge -- provides oppurtunities to contribute to package development!</ul>
+</ul>
+
+<li />Next tasks:<ul>
+<li />Library: <ul>
+<li />Add unit testing to library modules
+<li />Complete library documentation
+<li />Streamline build/release process (to test, build documentation, bundle as a package)  </ul>
+</ul>
+</ul>
+</ul>
+    </body>
+</html>

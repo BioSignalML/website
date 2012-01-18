@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Common Data Model</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Software.html">Software</a></span></span><br /><br />
+<a name=".h0"></a><h2>Common Data Model</h2>
+Open a <span class="wiki-link"><a href="Recording.html">Recording</a></span> by getting an instance of the class.<pre>abstract class Recording(uri: URI, repository: Some[Repository]) {
+  def this(file: File) = this(file.getURL.toURI, None)
+  
+  
+  }
+</pre>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>TimeLine</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Instant.html">Instant</a></span> | <span class="parent-node"><a href="Interval.html">Interval</a></span> | <span class="parent-node"><a href="Metadata.html">Metadata</a></span> | <span class="parent-node"><a href="SampledSegment.html">SampledSegment</a></span> | <span class="parent-node"><a href="SignalSegment.html">SignalSegment</a></span> | <span class="parent-node"><a href="Time.html">Time</a></span></span><br /><br />
+<a name=".h0"></a><h2>Time Line</h2>
+<a name="continuousTimeLine"></a><a name=".h41"></a><h3>Continuous Timeline</h3>
+<a name="relativeTimeLine"></a><a name=".h91"></a><h3>Relative Timeline</h3>
+<a name="DiscreteTimeLine"></a><a name=".h139"></a><h3>Discrete Timeline</h3>
+<a name="sampledTimeLine"></a><a name=".h186"></a><h3>Sampled Timeline</h3>
+<br />
+<a name="timelineMap"></a><a name=".h229"></a><h3>Timeline Maps</h3>
+A relationship between two timelines is given by a TimeLineMap, which is a function that determines how <span class="wiki-link"><a href="Instant.html">Instants (time-points)</a></span> are mapped from the domain timeline to the range timeline. A TimeLineMap may not neccessarily have an inverse, for example a mapping from a datetime to the date component.<br />
+<br />
+<a name=".h562"></a><h4>Implementation</h4>
+We assume all timelines share the same underlying "universal time" and only allow for translation maps between timelines. Maps can then be represented by specifying the temporal offset between two timelines, such as the start time of a recording or a timezone offset. Inverses maps exist for our maps, being simply the reverse of the translation (the negative value of the offset).<br />
+<br />
+This leads to natural relationship of timelines, with two timelines being related if there exists a sequence of timelines and maps between them.<br />
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Interval</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Time.html">Time</a></span></span><br /><br />
+<a name=".h0"></a><h2>Interval</h2>
+An Interval is defined on a <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span> as a connnected set of time points. It has a start-time, a duration, and an end-time, with (duration &gt; 0) and (end-time = start-time + duration). An Interval's start-time is in the Interval while its end-time is the Interval's least upper bound (and is not a member of the Interval).<br />
+<br />
+Examples:<ul>
+<li />On the <b>continuous <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span></b> consisting of the non-negative real numbers, the sub-set [3, 7) is an Interval with a start-time of 3, a duration of 4, and an end-time of 7.
+<li />On the <b>regularly sampled <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span></b> with time points { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ... }, the sub-set { 3, 4, 5, 6 } is an Interval with a start-time of 3, a duration of 4, and an end-time of 7.
+<li />On the <b>irregularly sampled <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span></b> with time points { 0, 1.1, 2.0, 2.9, 4.0, 5.2, 6.1, 6.8, 7.9, 9.0, 10.1, 11.0, 12.3, 13.2, 14.1, 15.0, ... }, the sub-set { 2.9, 4.0, 5.2, 6.1 } is an Interval with a start-time of 2.9, a duration of 3.9, and an end-time of 6.8.</ul>
+    </body>
+</html>

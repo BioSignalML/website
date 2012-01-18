@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Partial BioSignalML</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Recording.html">Recording</a></span></span><br /><br />
+<a name=".h0"></a><h2>Partial BioSignalML Implementations</h2>
+This is when we have a signal recording file without a metadata repository.<br />
+<br />
+The intent is to use the same set of API calls to access signals and metadata contained in the file.<br />
+<pre>val file = new File(filename)
+val rec = new Recording(file)   // overloaded constructor --&gt; Recording(file.toURI, None)
+val format = rec.getFormat()
+val sig1 = rec.getSignal("1")
+</pre>
+versus:<br />
+<pre>val repo = new jenaRepository(location)
+val rec = new Recording(recuri, repo)
+// Do we find file as { recuri  DC:source  ?file } and open it?? NO
+// or does recuri.toURL() locate the file?                            YES
+// and what if the file doesn't exist? Or is in the wrong format??
+</pre>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Metadata</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Software.html">Software</a></span></span><br /><br />
+<a name=".h0"></a><h2>Metadata</h2>
+Associated with both <span class="wiki-link"><a href="Recording.html">Recordings</a></span> and <span class="wiki-link"><a href="Signal.html">Signals</a></span>. Held as RDF (<span class="url-link"><a href="http://www.w3.org/TR/rdf-concepts/">http://www.w3.org/TR/rdf-concepts/</a></span>)<br />
+<br />
+Each recording has its own named graph, holding the metadata of the recording and its associated signals.<br />
+<br />
+<a name=".h240"></a><h3>Vocabularies</h3>
+<a name=".h258"></a><h4>Standard Vocabularies</h4>
+RDF Schema - <span class="url-link"><a href="http://www.w3.org/TR/2004/REC-rdf-schema-20040210/">http://www.w3.org/TR/2004/REC-rdf-schema-20040210/</a></span><br />
+Dublin Core Terms - <span class="url-link"><a href="http://dublincore.org/documents/dcmi-terms/">http://dublincore.org/documents/dcmi-terms/</a></span><br />
+The <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span> Ontology - <span class="url-link"><a href="http://purl.org/NET/c4dm/timeline.owl#">http://purl.org/NET/c4dm/timeline.owl#</a></span><br />
+OWL-Time - <span class="url-link"><a href="http://www.w3.org/2006/time#">http://www.w3.org/2006/time#</a></span><br />
+<br />
+<a name=".h517"></a><h3>Implementation</h3>
+The Jena framework (<span class="url-link"><a href="http://jena.sourceforge.net/index.html">http://jena.sourceforge.net/index.html</a></span>) is used to hold and query RDF. In full BioSignalML implementation (ie. one with a metadata repository), a persistent RDF store is provided via Jena's TDB layer; it could equally be provided by Jena's SDB and a SQL database, or by products such as Virtuoso RDF (<span class="url-link"><a href="http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSRDF">http://virtuoso.openlinksw.com/dataspace/dav/wiki/Main/VOSRDF</a></span>) which have a Jena interface. For a partial BioSignalML implementation there is no persistence layer (outside of what a Recording's data file may contain), and RDF is held in an in-memory model.    </body>
+</html>

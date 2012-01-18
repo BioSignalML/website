@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Time</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Thesis.html">Thesis</a></span></span><br /><br />
+<a name=".h0"></a><h2>Time</h2>
+Based on the <span class="wiki-link"><a href="TimeLine.html">TimeLine</a></span> concept -- see <span class="url-link"><a href="http://motools.sf.net/timeline/timeline.html">http://motools.sf.net/timeline/timeline.html</a></span> and <span class="url-link"><a href="http://www.ihmc.us/users/phayes/Pub/TimeCatalog.pdf">http://www.ihmc.us/users/phayes/Pub/TimeCatalog.pdf</a></span><br />
+<br />
+A Recording has an associated <span class="wiki-link"><a href="TimeLine.html#relativeTimeline">RelativeTimeLine</a></span> that is a <span class="wiki-link"><a href="TimeLine.html#continuousTimeline">ContinuousTimeLine</a></span> used to define <span class="wiki-link"><a href="Instant.html">Instants</a></span> and <span class="wiki-link"><a href="Interval.html">Intervals</a></span> within the recording. The recording may also have a <span class="wiki-link"><a href="TimeLine.html#timelineMap">TimeLineMap</a></span> that determines when its RelativeTimeline starts in terms of some <span class="wiki-link"><a href="TimeLine.html#physicalTimeline">PhysicalTimeLine</a></span>.<br />
+<br />
+<a name=".h556"></a><h3>Implementation</h3>
+We measure time in discrete quanta or "ticks" of 100 nanoseconds (that provides a time span of at least -29,000 to +29,000 years using a signed 64-bit integer to hold the value of a tick). The origin for physical time is 1970-01-01T00:00:00UTC.<br />
+<br />
+<a name=".h822"></a><h3>References to temporal enities -- Instants and Intervals</h3>
+The annotation of recordings and signals includes noting events that occur at or over a particular time period, by associating a "time" property to the event.  <br />
+    </body>
+</html>

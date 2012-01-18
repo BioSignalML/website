@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "BioSignalML"
+AuthUserFile /www/biosignalml/access/.htpasswd
+AuthGroupFile /www/biosignalml/access/.htgroup
+require group biosignalml

@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Recording</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Common Data Model.html">Common Data Model</a></span> | <span class="parent-node"><a href="HDF5-based recording format.html">HDF5-based recording format</a></span> | <span class="parent-node"><a href="Metadata.html">Metadata</a></span> | <span class="parent-node"><a href="Signal Naming.html">Signal Naming</a></span> | <span class="parent-node"><a href="Thesis.html">Thesis</a></span></span><br /><br />
+<a name=".h0"></a><h2>Recording</h2>
+A Recording is a container for a set of Signals. The recording will have metadata associated with it in addition to its individual signals; each signal will also have its own metadata in addition to a timeseries of data values. A recording may have a start-time (UTC or local).<br />
+<br />
+In a full BioSignalML implementation, metadata is held in a RDF <span class="wiki-link"><a href="TripleStore.html">TripleStore</a></span>. Each recording also has an associated file, in a recognised format, that holds signal data. Any metadata in the recording's file is mirrored in the store. The use of a RDF store enables queries to encompass all recordings and signals described therin.<br />
+<br />
+<span class="wiki-link"><a href="Partial%20BioSignalML.html">Partial BioSignalML</a></span> implementations do not have a metadata store. In this case a recording has just a file (in a recognised format) containing both metadata and signals.<br />
+<br />
+In both cases a recording is identified by a URI, which also forms part of each signal's URI (see <span class="wiki-link"><a href="Signal%20Naming.html">Signal Naming</a></span>). When a repository is not being used the recording's URI is formed from the full path of to the recording's file.<br />
+<br />
+Opening a recording's data file also opens the recording's metadata graph. This will either be in a RDF store or a (newly created) in-memory graph.<br />
+<br />
+If we didn't know about the recording (check name/URI, timestamps, and ??) then we populate the graph with metadata about the recording and its signals from the information held in the file. <b>Or do we assume that the recording's file is the definitive truth and hence always populate the graph?</b> And what if the file has a <RDF/> metadata block in it? We obviously add this, but what if it conflicts with other metadata attributes in the file??<br />
+<br />
+<a name=".h1621"></a><h3>API</h3>
+<pre>package org.biosignalml
+
+import org.biosignalml.metadata
+
+class Recording(val uri: URI, repository: Option[Repository]) extends metadata.Recording(uri, repository) {
+  def this(file: File) = this(file.toURL.toURI, None)
+
+// Signal access:
+  def hasSignal(id: String): Boolean
+  def addSignal(id: String): Signal
+  def getSignal(id: String): Signal
+// Signal data access
+  def getSignalData()
+  def putSignalData()
+  }
+  
+class Signal(val recording: Recording, val id: String) extends metadata.Signal(recording, id) {
+
+  /**
+   * @param signal     a URI identifying the signal
+   * @param repository the Repository holding the signal's Recording
+   */
+  def this(signal: URI, repository: Option[Repository]) =
+    this(new Recording(new URI( {
+      val s = signal.toString
+      val q = s.lastIndexOf('?')
+      if (q &gt;= 0) s.substring(0, q) else s
+      } ), repository),
+     signal.getQuery())
+
+// Data access -- data includes timing: sample rate, start (wrt. recording)
+  def getData()  // on Interval, or a set of Intervals?  BOTH
+  def putData()  // can only append
+  
+  
+  def setUnits() = setProperty(bsml:units, )
+  }
+</pre>
+    </body>
+</html>

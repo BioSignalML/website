@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Web Interface</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Software.html">Software</a></span></span><br /><br />
+<a name=".h0"></a><h2>Web Interface</h2>
+<ul>
+<li />User input<ul>
+<li />Structured query form
+<li />Free format query (SPARQL)</ul>
+
+<li />Form processor validates, generates SPARQL and passes query to endpoint
+<li />Results returned (XML? JSON?) and returned to user
+<li />Style via XSLT, CSS (and JS?)<br />
+
+<li />With structured input can directly connect to TripleStore without using SPARQL query<ul>
+<li /><code>for (rec &lt;- triplestore.recordings) {  }</code><br />
+</ul>
+</ul>
+Can we know which of the resulting URIs refer to signals and/or recodings? Only if we build the SPARQL to return signal and recording URIs in known positions. Easiest with a structured query form...<br />
+<br />
+If we know <b>all</b> the recording URIs then from naming convention can deduce a signal URI. SPARQL: <code>select ?r WHERE { ?r rdf:type bsml:Recording } </code><br />
+<br />
+    </body>
+</html>

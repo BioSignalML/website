@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>SignalFile</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Existing Formats.html">Existing Formats</a></span></span><br /><br />
+<a name=".h0"></a><h2>Signal File</h2>
+An abstract class defining an interface for accessing signal data files.<br />
+<pre>object SignalFile {
+  val tripleStore = new metadata.jena.TripleStore(config.options)
+  }
+
+abstract class SignalFile(uri: URI, create: Boolean) extends metadata.Recording(uri, tripleStore) {
+  def open(file: File)
+  def open(path: String) = open(new File(path))
+  def create(file: File)
+  def create(path: String) = create(new File(path))
+  def close()
+  
+  def getSignal(id: String, tm: Interval): SampledSignal
+  def putSignal(id: String, data: SampledSegment)
+  
+  }
+</pre>
+    </body>
+</html>

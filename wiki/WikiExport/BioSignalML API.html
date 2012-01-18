@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>BioSignalML API</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Software.html">Software</a></span></span><br /><br />
+<a name=".h0"></a><h2>BioSignalML API</h2>
+General aim is simplicity of use, certainly to access the most common functions.<br />
+<ul>
+<li />User has a signal file (recording) and wants to get signal data from it.
+<li />User does some query or search to get the signal file(s) and signal id(s) and time intervals of interest; then wants signal data for visualisation or prococesing.
+<li />Having processed signal data resulting data needs to be stored into a new recording (signal file).<br />
+<br />
+<br />
+<br />
+</ul>
+Use cases:<br />
+<ol>
+<li />Only import from a single package for simple usage.<br />
+
+<li />Work with a repository:<pre>  val repo = new typeRepository(location, connection parameters)  // jenaRepository etc
+                                                                  // sparqlRepository ??
+  repo.query(sparql)
+  val rec = repo.getRecording(record_url)
+  for (r &lt;- repo.getRecordings()) { }
+  val sig = rec.getSignal(signal_id)
+  val sig = repo.getSignal(record_url#signal_id)
+  for (s &lt;- rec.getSignals()) { }
+  sig.units()
+  sig.getData(interval)   // etc    
+</pre>
+
+<li />Work directly with a signal file:<pre>  val rec = new typeRecording(location)                           // EDFRecording
+  val sig = rec.getSignal(signal_id)
+  for (s &lt;- rec.getSignals()) { }
+  sig.units()
+  sig.getData(interval)   // etc    
+</pre>
+
+<li />Attach a signal file to a repository and work with the repository:<pre>  val repo = new typeRepository(location, connection parameters)  // jenaRepository etc
+  val rec = new typeRecording(location)                           // EDFRecording
+  repo.attach(rec)
+  repo.query(sparql)
+  // etc
+</pre>
+<br />
+Do we have functions such as:<pre>  repo.getMetadata()
+  rec.getMetadata()
+  sig.getMetadata()
+
+or even:
+
+  sig.metadata(property): Some(value)  // etc
+
+</pre>
+<br />
+<br />
+<br />
+<br />
+<br />
+</ol>
+<span class="property">[font: Courier New]</span><br />
+    </body>
+</html>

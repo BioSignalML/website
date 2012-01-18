@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>AdHocFormats</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Existing Formats.html">Existing Formats</a></span></span><br /><br />
+<a name=".h0"></a><h2>Ad Hoc Formats</h2>
+Some software packages claim to use a standard format for signal data when in fact the package developers have implemented their interpretation of a specification and not tested the implementation for standard's compliance.<br />
+<br />
+This hampers the easy interchange of files between and within research groups...<br />
+<br />
+<a name=".h326"></a><h3>Minerva</h3>
+Minerva departs from the EDF specification in two ways:<ol>
+<li />It uses Nul characters (x00) as a pad/fill character in the file header instead of a space character (x20).
+<li />The physical minimum/maximum fields are right justified when in fact they should be left justified (Minerva correctly left justifies all other numeric fields).<br />
+</ol>
+The EDF specification clearly states that only Ascii printing characters are allowed in a file header and that fields are to be left justified.<br />
+<br />
+Both are easy enough to fix (in fact case 2 just needs a format changed from "%8.1f" to "%-8.1f" although no one has considered fields overflowing with large numbers..). A better approach would be for Minerva to use a standard compliant library -- in both cases historical signal files will need converting...<br />
+<br />
+The EDF/EDF+ format is also in the process of becoming a European Standard. Are there implications for F&amp;P of it using software purporting to use a standard file format when in fact the software doesn't??<br />
+<br />
+For BioSignalML I will use the standard EDF/EDF+ library and have a separate driver to read Minerva's data files (and no longer refer to them as being EDF).    </body>
+</html>

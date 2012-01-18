@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>HDF5-based recording format</title>
+        <link type="text/css" rel="stylesheet" href="appbase.css">
+    </head>
+    <body>
+<span class="parent-nodes">parent nodes: <span class="parent-node"><a href="Paper 1.html">Paper 1</a></span> | <span class="parent-node"><a href="Software.html">Software</a></span></span><br /><br />
+<a name=".h0"></a><h2>HDF5-based recording format</h2>
+A <span class="wiki-link"><a href="Recording.html">Recording</a></span> can be stored in <span class="url-link"><a href="http://www.hdfgroup.org/HDF5/">HDF5</a></span> format.<ul>
+<li />One recording in a HDF5 file.
+<li />Recordings can be opened or created.<br />
+<br />
+<span class="wiki-link"><a href="Signal.html">Signals</a></span> are held as HDF5 groups containing signal segment datasets. Operations on signals are:<ul>
+<li />create  --  needs to know format/type of point's values.
+<li />open  --  will return/set format/type of values.
+<li />append  --  data points (as signal segments; if timed segment then wrt signal start; if uniform segment then have sample-rate; if non-uniform then refer to sample timing (which is held in a separate group/dataset)).
+<li />position  --  by time (and by point offset ??).
+<li />read  --  return a sequence of timed segments.<br />
+</ul>
+</ul>
+<span class="wiki-link"><a href="Signal.html#signalMetadata">Core metadata</a></span> associated with a signal is held within the signal's HDF5 group. <br />
+<br />
+    </body>
+</html>
