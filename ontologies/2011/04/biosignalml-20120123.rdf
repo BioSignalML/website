@@ -22,8 +22,11 @@
     <dc:description>A sequence of periodic measurements of some quantity, ordered by some sampling
            dimension, normally time. A Signal is part of some Recording.</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">
-    <bsml:Event rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event">
+    <dc:description>Something that has occurred in time, possibly for some duration.</dc:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
