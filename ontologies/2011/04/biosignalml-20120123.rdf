@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:bsml="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:time="http://www.w3.org/2006/time#" xmlns:tl="http://purl.org/NET/c4dm/timeline.owl#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/subject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/elements/1.1/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">
+    <dc:description>A collection of Signals that have been recorded simultaneously and kept together.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">
+    <dc:description>A sequence of periodic measurements of some quantity, ordered by some sampling
+           dimension, normally time. A Signal is part of some Recording.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">
+    <bsml:Event rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation">
+    <dc:description>A general note, comment, or qualitative measure about the whole of,
+           or some portion of, a Recording, Signal or Event.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal">
+    <dc:description>A signal that has been sampled at a constant rate.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter">
+    <dc:description>The class of filter that has been applied to a signal during data collection.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter">
+    <dc:description>A band-pass filter.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter">
+    <dc:description>A high-pass filter.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter">
+    <dc:description>A low-pass filter.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter">
+    <dc:description>A notch (blocking) filter.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source">
+    <dc:description>The source (i.e. file, device, simulation, etc) of a Signal or Recording.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset">
+    <dc:description>A collection of data files or web services that contain Recording or Signal information.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation">
+    <dc:description>A computer simulation or modelling process that created the Signal or Recording.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device">
+    <dc:description>The physical device that saved the output of a sensor into a format able to be stored.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor">
+    <dc:description>What actually captured a signal -- an electrode, transducer, etc.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">
+    <dc:description>A device that converts a measurable quantity into an electrical signal
+           (e.g. thermistor, pressure sensor, strain gauge).</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Transducer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode">
+    <dc:description>An electrical conductor in contact with non-conducting material, through which
+            electrical activity can be measured.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode">
+    <rdfs:subClassOf rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format">
+    <dc:description>The particular storage format used to encode a Recording (e.g. EDF+, WFDB, SCP-ECG, MFER).</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType">
+    <dc:description>The class or type of signal (e.g. EEG, ECG).</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity">
+    <owl:equivalentClass rdf:resource="http://www.w3.org/2006/time#TemporalEntity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity">
+    <dc:description>Some measurement of time, either as a particular point in time or as some interval.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">
+    <dc:description>The class used to represent the types of measurement units used by signals.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">
+    <rdfs:comment>Measurement units would normally be entities in a specialised units of measure ontology.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">
+    <rdfs:seeAlso rdf:resource="http://www.sbpax.org/uome/list.html"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">
+    <dc:description>Pre-filtering applied to a signal as part of collection.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">
+    <dc:description>The Recording a Signal is part of.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor">
+    <dc:description>What was used to collect or derive an electrical signal</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:rest rdf:nodeID="genid1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <owl:unionOf rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <dc:description>The source of a Recording or Signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <rdfs:domain rdf:nodeID="genid3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <dc:description>The format used to hold the recording.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">
+    <dc:description>A signal's generic type.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <dc:description>The physical units that are represented by a signal's data values.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <rdfs:comment>Specification of units allows for consistency checking and automatic conversion</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">
+    <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">
+    <dc:description>The minimum frequency, in Hertz, contained in the signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">
+    <dc:description>The maximum frequency, in Hertz, contained in the signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">
+    <dc:description>The maximum value of the signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">
+    <dc:description>The minimum value of the signals data value.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">
+    <dc:description>The sampling period, in seconds, of a uniformly sampled signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">
+    <dc:description>The sampling rate, in Hertz, of a uniformly sampled signal.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">
+    <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF">
+    <dc:title>European Data Format</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus">
+    <dc:title>European Data Format +</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER">
+    <dc:title>Medical Format Encoding Rules</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW">
+    <dc:description>Raw, binary data with unknown format.</dc:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG">
+    <dc:title>Standard Communications Protocol for ECG</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF">
+    <dc:title>Stanford Data Format</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB">
+    <dc:title>WaveForm DataBase</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BioSignalML">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BioSignalML">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP">
+    <dc:title>Blood Pressure</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG">
+    <dc:title>Electrocardiogram</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG">
+    <dc:title>Electroencephalogram</dc:title>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:rest rdf:nodeID="genid5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:rest rdf:nodeID="genid6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:rest rdf:nodeID="genid7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid9">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid9">
+    <rdf:rest rdf:nodeID="genid8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <owl:members rdf:nodeID="genid9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid11">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid11">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid12">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid12">
+    <rdf:rest rdf:nodeID="genid11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid13">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid13">
+    <rdf:rest rdf:nodeID="genid12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid14">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid14">
+    <rdf:rest rdf:nodeID="genid13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid10">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid10">
+    <owl:members rdf:nodeID="genid14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid16">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid16">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid17">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid17">
+    <rdf:rest rdf:nodeID="genid16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid18">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid18">
+    <rdf:rest rdf:nodeID="genid17"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid19">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid19">
+    <rdf:rest rdf:nodeID="genid18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid20">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid20">
+    <rdf:rest rdf:nodeID="genid19"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid21">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid21">
+    <rdf:rest rdf:nodeID="genid20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid22">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BioSignalML"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid22">
+    <rdf:rest rdf:nodeID="genid21"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid15">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid15">
+    <owl:distinctMembers rdf:nodeID="genid22"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid24">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid24">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid25">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid25">
+    <rdf:rest rdf:nodeID="genid24"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid26">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid26">
+    <rdf:rest rdf:nodeID="genid25"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid23">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid23">
+    <owl:distinctMembers rdf:nodeID="genid26"/>
+  </rdf:Description>
+</rdf:RDF>
