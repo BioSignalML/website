@@ -207,7 +207,7 @@
 
    <p>
     <span class="todo">TODO</span> --- add "and Individuals...."
-
+   </p>
    <p>
     An alphabetical index of BioSignalML terms, by class (concepts) and by property 
     (relationships, attributes), are given below. All the terms are hyperlinked 
@@ -323,10 +323,10 @@
       <tr><th>Used with:</th>
  <td>  <a href="#preFilter">preFilter</a>
 </td></tr> <tr><th>Has sub class:</th>
- <td>  <a href="#Notch_Filter">Notch_Filter</a>
- <a href="#HP_Filter">HP_Filter</a>
- <a href="#BP_Filter">BP_Filter</a>
+ <td>  <a href="#HP_Filter">HP_Filter</a>
+ <a href="#Notch_Filter">Notch_Filter</a>
  <a href="#LP_Filter">LP_Filter</a>
+ <a href="#BP_Filter">BP_Filter</a>
  </td></tr><tr><th colspan="2">OWL Class</th>
  <td>  </td></tr>
       </table>
@@ -422,15 +422,15 @@
            dimension, normally time. A Signal is part of some Recording.</span></div>
      <table style="th { float: top; }">
       <tr><th>Properties include:</th>
- <td>  <a href="#minValue">minValue</a>
- <a href="#sensor">sensor</a>
+ <td>  <a href="#sensor">sensor</a>
  <a href="#signalType">signalType</a>
- <a href="#preFilter">preFilter</a>
  <a href="#minFrequency">minFrequency</a>
  <a href="#maxFrequency">maxFrequency</a>
+ <a href="#minValue">minValue</a>
  <a href="#maxValue">maxValue</a>
- <a href="#units">units</a>
  <a href="#recording">recording</a>
+ <a href="#preFilter">preFilter</a>
+ <a href="#units">units</a>
  </td></tr>
       <tr><th>Has sub class:</th>
  <td>  <a href="#UniformSignal">UniformSignal</a>
@@ -474,9 +474,9 @@
       <tr><th>Used with:</th>
  <td>  <a href="#source">source</a>
 </td></tr> <tr><th>Has sub class:</th>
- <td>  <a href="#Device">Device</a>
- <a href="#Dataset">Dataset</a>
+ <td>  <a href="#Dataset">Dataset</a>
  <a href="#Simulation">Simulation</a>
+ <a href="#Device">Device</a>
  </td></tr><tr><th colspan="2">OWL Class</th>
  <td>  </td></tr>
       </table>
@@ -724,12 +724,12 @@
       <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">http://www.biosignalml.org/ontologies/2011/04/biosignalml#source</a></div><div class="para"><span property="dc:description" >The source of a Recording or Signal.</span></div>
      <table style="th { float: top; }">
       <tr><th>Domain:</th>
- <td>   <span rel="rdfs:domain" resource="[_:tUldXZsN5]"></span>
-                  <span about="[_:tUldXZsN5]" typeof="owl:Class"></span>
-                  <span about="[_:tUldXZsN5]" rel="owl:unionOf" resource="[_:tUldXZsN4]"></span>  <span about="[_:tUldXZsN4]" typeof="rdf:Description"></span>
-                  <span about="[_:tUldXZsN4]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">bsml:Recording</a></span>
-                  <span about="[_:tUldXZsN4]" rel="rdf:rest" resource="[_:tUldXZsN3]"></span> or <span about="[_:tUldXZsN3]" typeof="rdf:Description"></span>
-                            <span about="[_:tUldXZsN3]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">bsml:Signal</a></span> <span about="[_:tUldXZsN3]" rel="rdf:rest" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"></span> </td></tr>
+ <td>   <span rel="rdfs:domain" resource="[_:SvtFDTVb5]"></span>
+                  <span about="[_:SvtFDTVb5]" typeof="owl:Class"></span>
+                  <span about="[_:SvtFDTVb5]" rel="owl:unionOf" resource="[_:SvtFDTVb4]"></span>  <span about="[_:SvtFDTVb4]" typeof="rdf:Description"></span>
+                  <span about="[_:SvtFDTVb4]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">bsml:Recording</a></span>
+                  <span about="[_:SvtFDTVb4]" rel="rdf:rest" resource="[_:SvtFDTVb3]"></span> or <span about="[_:SvtFDTVb3]" typeof="rdf:Description"></span>
+                            <span about="[_:SvtFDTVb3]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">bsml:Signal</a></span> <span about="[_:SvtFDTVb3]" rel="rdf:rest" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"></span> </td></tr>
       <tr><th>Range:</th>
  <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"><a href="#Source">Source</a></span>
  </td></tr><tr><th>Sub property of:</th>
