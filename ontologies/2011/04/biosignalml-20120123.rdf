@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:bsml="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:time="http://www.w3.org/2006/time#" xmlns:tl="http://purl.org/NET/c4dm/timeline.owl#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<rdf:RDF xmlns:bsml="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:time="http://www.w3.org/2006/time#" xmlns:tl="http://purl.org/NET/c4dm/timeline.owl#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
   </rdf:Description>
@@ -254,7 +254,7 @@
     <dc:description>The source of a Recording or Signal.</dc:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/source"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/source"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">
     <rdfs:domain rdf:nodeID="genid3"/>
@@ -269,7 +269,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
-    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/elements/1.1/format"/>
+    <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/format"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">
     <dc:description>The format used to hold the recording.</dc:description>
