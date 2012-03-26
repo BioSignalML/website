@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:owl="http://www.w3.org/2002/07/owl#"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:bibo="http://purl.org/ontology/bibo/"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+      xmlns:bsml="http://www.biosignalml.org/ontologies/2011/04/biosignalml#"
+      typeof="bibo:Document"
+      about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+      version="XHTML+RDFa 1.0">
+ <head>
+  <title about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+         property="dc:title">BioSignalML: An ontology for working with biosignals</title>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+<!--  <base href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html" /> -->
+  <meta about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#"
+        typeof="owl:Ontology" rel="dc:creator" content="David Brooks" />
+  <meta about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+        property="dc:creator" content="David Brooks" />
+  <link about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+        href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#"
+        rel="foaf:primaryTopic" rev="foaf:isPrimaryTopicOf" />
+
+  <link about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+        href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.rdf"
+        rel="alternate dcterms:hasFormat"  type="application/rdf+xml" />
+  <link about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+        href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.ttl"
+        rel="alternate dcterms:hasFormat"  type="text/turtle" />
+  <link rel="stylesheet" type="text/css" href="css/xmlns-style.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+ </head>
+
+ <body>
+
+  <div class="head">
+   <a href="http://www.biosignalml.org/">
+    <img src="images/BSMLLogo3.png" title="BioSignalML logo" alt="BioSignalML logo" width="256" height="149" style="float: right"/>
+   </a>
+   <h1 about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" property="dc:title">The BioSignalML Ontology</h1>
+   <h2>An ontology for working with biosignals</h2>
+   <h2>Version <span about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" property="owl:versionInfo" datatype="xsd:decimal">0.91</span>
+             - <span about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" property="dc:date"
+                     content="20102-03-08T11:46:00+13:00" datatype="xsd:dateTime">8 March 2012</span></h2>
+   <dl>
+    <dt>This version:</dt><dd>
+     <a rel="dc:hasVersion" rev="dc:isVersionOf"
+      href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120308.html">http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120308.html</a>
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120308.rdf">RDF/XML</a>)
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120308.ttl">Turtle</a>)
+    </dd>
+    <dt>Latest version:</dt><dd>
+     <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html">http://www.biosignalml.org/ontologies/2011/04/biosignalml.html</a>
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.rdf">RDF/XML</a>)
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml.ttl">TURTLE</a>)
+    </dd>
+    <dt>Previous version:</dt><dd>
+     <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120127.html">http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120127.html</a>
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120127.rdf">RDF/XML</a>)
+     (<a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml-20120127.ttl">Turtle</a>)
+    </dd>
+    <dt>Last Update:</dt><dd>Date: 8 March 2012</dd>
+    <dt>Editors:</dt><dd>David Brooks, Auckland Bioengineering Institute</dd>
+    <dt>Acknowledgements:</dt><dd>See <a href="#acknowledgments">acknowledgements</a></dd>
+   </dl>
+
+   <div about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html" rel="dc:conformsTo"
+     resource="http://www.w3.org/TR/rdfa-syntax"></div>
+   <p>
+    <a href="http://validator.w3.org/check?uri=referer"><img style="border: 0; float: right; padding: 5px;"
+        src="http://www.w3.org/Icons/valid-xhtml-rdfa"
+        alt="Valid XHTML + RDFa" height="31" width="88" /></a>
+   </p>
+   <p class="copyright">
+    <span about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" property="dc:rights">Copyright &#169; 2011 David Brooks</span>.
+
+    <!-- Creative Commons License -->
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+     <img alt="Creative Commons Licence" style="border-width:0; float:right; padding: 5px"
+      src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" />
+    </a>This work is licensed under a
+    <a about="http://www.biosignalml.org/ontologies/2011/04/biosignalml.html"
+     rel="license dc:license" href="http://creativecommons.org/licenses/by-sa/3.0/"
+     title="Creative Commons Attribution-ShareAlike 3.0 Unported License">Creative Commons Attribute-ShareAlike 3.0 Unported License</a>,
+    so you are granted to use, copy, distribute, transmit and adapt this work, but you must attribute the work to the
+    original authors and distribute the resulting work under similar terms. This copyright applies to the <em>BioSignalML Ontology</em> 
+    and accompanying documentation in RDF. The <em>BioSignalML Ontology</em> uses W3C's <a href="http://www.w3.org/RDF/">RDF</a> technology, an
+    open Web standard that can be freely used by anyone.
+   </p>
+
+   <p class="copyright" style="clear:both">
+    This work is supported by ... <span class="todo">TODO</span>
+   </p>
+
+  </div>
+
+  <hr />
+
+  <h2 id="abstract">Abstract</h2>
+  <p>This specification defines the ....</p>
+
+  <h2 id="status">Status of this Document</h2>
+  <p>
+    <strong>This is a work in progress!</strong> This document is changing
+    on a daily if not hourly basis. Comments are very welcome, please send
+    them to the authors. Thank you.
+  </p>
+
+  <h2 id="contents">Table of Contents</h2>
+  <ol id="toc">
+   <li><a href="#intro">Introduction</a></li>
+   <li><a href="#model">The BioSignalML Model</a></li>
+   <li><a href="#glance">BioSignalML ontology at a glance</a></li>
+   <li><a href="#reference">Cross-reference for BioSignalML classes and properties</a></li>
+  </ol>
+
+  <h3>Appendices</h3>
+  <ol id="appendix">
+   <li><a href="#references">References</a></li>
+   <li><a href="#changes">Changes in this version</a></li>
+   <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+
+  <hr />
+ 
+ <div class="body">
+
+  <div id="intro">
+   <h2>1. Introduction</h2>
+
+   <p>
+    <span class="todo">TODO</span> Write some text...
+   </p>
+
+   <img src="images/BSMLOntology.png" alt="BioSignalML Ontology diagram" width="907" height="501" class="centered" />
+
+  </div>
+
+  <hr />
+
+  <div id="model">
+   <h2>2. The BioSignalML Model</h2>
+   <p>
+    This ontology defines concepts to describe the storage and exchange of biosignals,
+    regardless of their underlying file format, and provides terms for common biosignal
+    metadata.
+   </p>
+
+   <p>
+    A <b>Recording</b> contains individual signals, all of which have
+    been recorded together. Signals in a recording may be all from the one device (e.g. a multi-lead
+    ECG or EEG recording) or may be from different devices (e.g. a polysomnography recording).
+    Core attributes of Recordings are:
+   </p>
+   <dl>
+    <dt>subject</dt><dd>Who or what is the subject of investigation.</dd>
+    <dt>investigator</dt><dd>Who made the recording.</dd>
+    <dt>starttime</dt><dd>When the recording began.</dd>
+    <dt>duration</dt><dd>The length of the recording.</dd>
+   </dl>
+
+   <p>
+    A <b>Signal</b> consists of a sequence of data points in some sampling dimension, usually time. Samples
+    may be uniformly spaced or irregular; the majority of biosignals are sampled at a uniform rate.
+    Core attributes are:
+   </p>
+   <dl>
+    <dt>label</dt><dd>A descriptive label.</dd>
+    <dt>units</dt><dd>The physical units of the quantity measured.</dd>
+    <dt>sensor</dt><dd>The transducer or electrode used to capture the signal.</dd>
+    <dt>filter</dt><dd>Details of filtering applied prior to sampling.</dd>
+    <dt>rate</dt><dd>The sampling frequency.</dd>
+    <dt>times</dt><dd>An increasing sequence of sampling times.</dd>
+   </dl>
+
+   <p>
+    An <b>Event</b> is something that has occurred in time, possibly for some duration. Sequences
+    of events, all describing aspects of the same quality, can be seen as a signal. Core attributes
+    of Events are:
+   </p>
+   <dl>
+    <dt>kind</dt><dd>What the event represents.</dd>
+    <dt>time</dt><dd>When the event occurred.</dd>
+    <dt>duration</dt><dd>The length of the event.</dd>
+   </dl>
+
+   <p>
+    <b>Annotations</b> are general notes, comments, or description of some qualitative measure,
+     and may be made about the whole, or some portion, of a Recording, Signal or Event.
+   </p>
+
+   <p>
+    Other ontologies, besides this one, are used for some of the above attributes,
+    in particular those from the DCMI Metadata Terms, OWL-Time, and
+    the TimeLine Ontology.
+   </p>
+   <p>
+    <span class="todo">TODO</span> -- add links to these ontologies....
+   </p>
+
+  </div>
+
+  <hr />
+
+  <div id="glance">
+   <h2>3. BioSignalML ontology at a glance</h2>
+
+   <p>
+    <span class="todo">TODO</span> --- add "and Individuals...."
+   </p>
+   <p>
+    An alphabetical index of BioSignalML terms, by class (concepts) and by property 
+    (relationships, attributes), are given below. All the terms are hyperlinked 
+    to their detailed description for quick reference.</p>
+
+<!-- The list of classes and properties goes here -->
+<div class="index">
+<p>Classes:  <a href="#Annotation">Annotation</a>,  <a href="#BP_Filter">BP_Filter</a>,  <a href="#Dataset">Dataset</a>,  <a href="#Device">Device</a>,  <a href="#Electrode">Electrode</a>,  <a href="#Event">Event</a>,  <a href="#Filter">Filter</a>,  <a href="#Format">Format</a>,  <a href="#HP_Filter">HP_Filter</a>,  <a href="#LP_Filter">LP_Filter</a>,  <a href="#Notch_Filter">Notch_Filter</a>,  <a href="#Process">Process</a>,  <a href="#Recording">Recording</a>,  <a href="#SampleClock">SampleClock</a>,  <a href="#Sensor">Sensor</a>,  <a href="#Signal">Signal</a>,  <a href="#SignalType">SignalType</a>,  <a href="#Simulation">Simulation</a>,  <a href="#Source">Source</a>,  <a href="#TemporalEntity">TemporalEntity</a>,  <a href="#Transducer">Transducer</a>,  <a href="#UniformSignal">UniformSignal</a>,  <a href="#UnitOfMeasure">UnitOfMeasure</a>, 
+</p>
+<p>Properties:  <a href="#clock">clock</a>,  <a href="#dataBits">dataBits</a>,  <a href="#format">format</a>,  <a href="#index">index</a>,  <a href="#maxFrequency">maxFrequency</a>,  <a href="#maxValue">maxValue</a>,  <a href="#minFrequency">minFrequency</a>,  <a href="#minValue">minValue</a>,  <a href="#period">period</a>,  <a href="#preFilter">preFilter</a>,  <a href="#rate">rate</a>,  <a href="#recording">recording</a>,  <a href="#sensor">sensor</a>,  <a href="#signalType">signalType</a>,  <a href="#source">source</a>,  <a href="#units">units</a>, 
+</p>
+<p>Individuals:  <a href="#BP">BP</a>,  <a href="#ECG">ECG</a>,  <a href="#EDF">EDF</a>,  <a href="#EDFplus">EDFplus</a>,  <a href="#EEG">EEG</a>,  <a href="#FieldML">FieldML</a>,  <a href="#MFER">MFER</a>,  <a href="#RAW">RAW</a>,  <a href="#SCP_ECG">SCP_ECG</a>,  <a href="#SDF">SDF</a>,  <a href="#WFDB">WFDB</a>, 
+</p>
+</div>
+<!-- End of the terms list -->
+
+  </div>
+
+  <hr />
+
+  <div id="reference">
+   <h2>4. Cross-reference of BioSignalML classes and properties</h2>
+
+<!-- The following is the script-generated list of classes and properties -->
+<div class="termlist"><h3>Classes, Properties and Individuals (full detail)</h3>
+<div class='termdetails'>
+
+<h2 class="specgroup">Classes</h2>
+ 
+
+
+<div class="specterm" id="Annotation" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation" typeof="owl:Class">
+      <h3>Class: bsml:Annotation</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Annotation</a></div><div class="para"><span property="dc:description" >A general note, comment, or qualitative measure about the whole of,
+           or some portion of, a Recording, Signal or Event.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Annotation">#</a>] <!-- Annotation --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="BP_Filter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter" typeof="owl:Class">
+      <h3>Class: bsml:BP_Filter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP_Filter</a></div><div class="para"><span property="dc:description" >A band-pass filter.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"><a href="#Filter">Filter</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#BP_Filter">#</a>] <!-- BP_Filter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Dataset" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset" typeof="owl:Class">
+      <h3>Class: bsml:Dataset</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Dataset</a></div><div class="para"><span property="dc:description" >A collection of data files or web services that contain Recording or Signal information.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"><a href="#Source">Source</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Dataset">#</a>] <!-- Dataset --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Device" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device" typeof="owl:Class">
+      <h3>Class: bsml:Device</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Device</a></div><div class="para"><span property="dc:description" >The physical device that saved the output of a sensor into a format able to be stored.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"><a href="#Source">Source</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Device">#</a>] <!-- Device --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Electrode" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode" typeof="owl:Class">
+      <h3>Class: bsml:Electrode</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Electrode</a></div><div class="para"><span property="dc:description" >An electrical conductor in contact with non-conducting material, through which
+            electrical activity can be measured.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"><a href="#Sensor">Sensor</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Electrode">#</a>] <!-- Electrode --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Event" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event" typeof="owl:Class">
+      <h3>Class: bsml:Event</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Event</a></div><div class="para"><span property="dc:description" >Something that has occurred in time, possibly for some duration.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Event">#</a>] <!-- Event --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Filter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter" typeof="owl:Class">
+      <h3>Class: bsml:Filter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter</a></div><div class="para"><span property="dc:description" >The class of filter that has been applied to a signal during data collection.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#preFilter">preFilter</a>
+</td></tr> <tr><th>Has sub class:</th>
+ <td>  <a href="#LP_Filter">LP_Filter</a>
+ <a href="#BP_Filter">BP_Filter</a>
+ <a href="#HP_Filter">HP_Filter</a>
+ <a href="#Notch_Filter">Notch_Filter</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Filter">#</a>] <!-- Filter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Format" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format" typeof="owl:Class">
+      <h3>Class: bsml:Format</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format</a></div><div class="para"><span property="dc:description" >The particular storage format used to encode a Recording (e.g. EDF+, WFDB, SCP-ECG, MFER).</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#format">format</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Format">#</a>] <!-- Format --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="HP_Filter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter" typeof="owl:Class">
+      <h3>Class: bsml:HP_Filter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#HP_Filter</a></div><div class="para"><span property="dc:description" >A high-pass filter.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"><a href="#Filter">Filter</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#HP_Filter">#</a>] <!-- HP_Filter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="LP_Filter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter" typeof="owl:Class">
+      <h3>Class: bsml:LP_Filter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#LP_Filter</a></div><div class="para"><span property="dc:description" >A low-pass filter.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"><a href="#Filter">Filter</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#LP_Filter">#</a>] <!-- LP_Filter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Notch_Filter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter" typeof="owl:Class">
+      <h3>Class: bsml:Notch_Filter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Notch_Filter</a></div><div class="para"><span property="dc:description" >A notch (blocking) filter.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"><a href="#Filter">Filter</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Notch_Filter">#</a>] <!-- Notch_Filter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Process" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Process" typeof="owl:Class">
+      <h3>Class: bsml:Process</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Process">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Process</a></div><div class="para"><span property="dc:description" >Some method or algorithm applied to one or more Signals in order to derive
+           information. The result could vary along a sampling dimension and be considered
+           as a Signal.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Process">#</a>] <!-- Process --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Recording" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording" typeof="owl:Class">
+      <h3>Class: bsml:Recording</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording</a></div><div class="para"><span property="dc:description" >A collection of Signals held as a named entity, all pertaining to one thing
+          (the subject) and which have been recorded in the same session.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Properties include:</th>
+ <td>  <a href="#format">format</a>
+ </td></tr>
+      <tr><th>Used with:</th>
+ <td>  <a href="#recording">recording</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Recording">#</a>] <!-- Recording --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="SampleClock" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SampleClock" typeof="owl:Class">
+      <h3>Class: bsml:SampleClock</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SampleClock">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SampleClock</a></div><div class="para"><span property="dc:description" >An increasing sequence of sample coordinates.</span></div><div class="para" property="rdfs:comment" >Several signals may use the same clock.</div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#clock">clock</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#SampleClock">#</a>] <!-- SampleClock --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Sensor" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor" typeof="owl:Class">
+      <h3>Class: bsml:Sensor</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor</a></div><div class="para"><span property="dc:description" >What actually captured a signal -- an electrode, transducer, etc.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#sensor">sensor</a>
+</td></tr> <tr><th>Has sub class:</th>
+ <td>  <a href="#Electrode">Electrode</a>
+ <a href="#Transducer">Transducer</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Sensor">#</a>] <!-- Sensor --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Signal" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal" typeof="owl:Class">
+      <h3>Class: bsml:Signal</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal</a></div><div class="para"><span property="dc:description" >A sequence of periodic measurements of some quantity, ordered by some sampling
+           dimension, normally time. A Signal is part of some Recording.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Properties include:</th>
+ <td>  <a href="#clock">clock</a>
+ <a href="#dataBits">dataBits</a>
+ <a href="#signalType">signalType</a>
+ <a href="#maxFrequency">maxFrequency</a>
+ <a href="#units">units</a>
+ <a href="#maxValue">maxValue</a>
+ <a href="#preFilter">preFilter</a>
+ <a href="#sensor">sensor</a>
+ <a href="#minValue">minValue</a>
+ <a href="#minFrequency">minFrequency</a>
+ <a href="#recording">recording</a>
+ <a href="#index">index</a>
+ </td></tr>
+      <tr><th>Has sub class:</th>
+ <td>  <a href="#UniformSignal">UniformSignal</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Signal">#</a>] <!-- Signal --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="SignalType" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType" typeof="owl:Class">
+      <h3>Class: bsml:SignalType</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType</a></div><div class="para"><span property="dc:description" >The class or type of signal (e.g. EEG, ECG).</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#signalType">signalType</a>
+</td></tr> <tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#SignalType">#</a>] <!-- SignalType --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Simulation" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation" typeof="owl:Class">
+      <h3>Class: bsml:Simulation</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Simulation</a></div><div class="para"><span property="dc:description" >A computer simulation or modelling process that created the Signal or Recording.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"><a href="#Source">Source</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Simulation">#</a>] <!-- Simulation --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Source" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source" typeof="owl:Class">
+      <h3>Class: bsml:Source</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source</a></div><div class="para"><span property="dc:description" >The source (i.e. file, device, simulation, etc) of a Signal or Recording.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#source">source</a>
+</td></tr> <tr><th>Has sub class:</th>
+ <td>  <a href="#Dataset">Dataset</a>
+ <a href="#Device">Device</a>
+ <a href="#Simulation">Simulation</a>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Source">#</a>] <!-- Source --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="TemporalEntity" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity" typeof="owl:Class">
+      <h3>Class: bsml:TemporalEntity</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity">http://www.biosignalml.org/ontologies/2011/04/biosignalml#TemporalEntity</a></div><div class="para"><span property="dc:description" >Some measurement of time, either as a particular point in time or as some interval.</span></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Equivalent Class:</th> <td>  <span rel="owl:equivalentClass" href="http://www.w3.org/2006/time#TemporalEntity"><a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#TemporalEntity">#</a>] <!-- TemporalEntity --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="Transducer" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer" typeof="owl:Class">
+      <h3>Class: bsml:Transducer</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer">http://www.biosignalml.org/ontologies/2011/04/biosignalml#Transducer</a></div><div class="para"><span property="dc:description" >A device that converts a measurable quantity into an electrical signal
+           (e.g. thermistor, pressure sensor, strain gauge).</span></div><div class="para">See also: <a href="http://en.wikipedia.org/wiki/Transducer" rel="rdfs:seeAlso">http://en.wikipedia.org/wiki/Transducer</a></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"><a href="#Sensor">Sensor</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#Transducer">#</a>] <!-- Transducer --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="UniformSignal" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal" typeof="owl:Class">
+      <h3>Class: bsml:UniformSignal</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal">http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal</a></div><div class="para"><span property="dc:description" >A signal that has been sampled at a constant rate.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Properties include:</th>
+ <td>  <a href="#rate">rate</a>
+ <a href="#period">period</a>
+ </td></tr>
+      <tr><th>Sub class of:</th>
+ <td>  <span rel="rdfs:subClassOf" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#UniformSignal">#</a>] <!-- UniformSignal --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="UnitOfMeasure" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure" typeof="owl:Class">
+      <h3>Class: bsml:UnitOfMeasure</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure">http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure</a></div><div class="para"><span property="dc:description" >The class used to represent the types of measurement units used by signals.</span></div><div class="para" property="rdfs:comment" >Measurement units would normally be entities in a specialised units of measure ontology.</div><div class="para">See also: <a href="http://www.sbpax.org/uome/list.html" rel="rdfs:seeAlso">http://www.sbpax.org/uome/list.html</a></div>
+     <table style="th { float: top; }">
+      
+      <tr><th>Used with:</th>
+ <td>  <a href="#units">units</a>
+</td></tr> <tr><th>Equivalent Class:</th> <td>  <span rel="owl:equivalentClass" href="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"><a href="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement">http://www.sbpax.org/uome/core.owl#:UnitOfMeasurement</a></span>
+ </td></tr><tr><th colspan="2">OWL Class</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#UnitOfMeasure">#</a>] <!-- UnitOfMeasure --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><h2 class="specgroup">Properties</h2>
+ 
+
+
+<div class="specterm" id="clock" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#clock" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:clock</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#clock">http://www.biosignalml.org/ontologies/2011/04/biosignalml#clock</a></div><div class="para"><span property="dc:description" >The sampling coordinates aassociated with a signal's data values.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SampleClock"><a href="#SampleClock">SampleClock</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#clock">#</a>] <!-- clock --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="dataBits" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#dataBits" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:dataBits</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#dataBits">http://www.biosignalml.org/ontologies/2011/04/biosignalml#dataBits</a></div><div class="para"><span property="dc:description" >The binary-bit resolution of the analogue-to-digital convertor or
+        sampling device used to digitise the signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#integer"><a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#dataBits">#</a>] <!-- dataBits --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="format" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:format</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#format">http://www.biosignalml.org/ontologies/2011/04/biosignalml#format</a></div><div class="para"><span property="dc:description" >The format used to hold the recording.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"><a href="#Recording">Recording</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Format"><a href="#Format">Format</a></span>
+ </td></tr><tr><th>Sub property of:</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/terms/format"><a href="http://purl.org/dc/terms/format">dcterms:format</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#format">#</a>] <!-- format --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="index" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#index" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:index</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#index">http://www.biosignalml.org/ontologies/2011/04/biosignalml#index</a></div><div class="para"><span property="dc:description" >The 0-origin position of a signal in a physical recording.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#integer"><a href="http://www.w3.org/2001/XMLSchema#integer">xsd:integer</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#index">#</a>] <!-- index --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="maxFrequency" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:maxFrequency</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency">http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxFrequency</a></div><div class="para"><span property="dc:description" >The maximum frequency, in Hertz, contained in the signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#maxFrequency">#</a>] <!-- maxFrequency --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="maxValue" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:maxValue</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue">http://www.biosignalml.org/ontologies/2011/04/biosignalml#maxValue</a></div><div class="para"><span property="dc:description" >The maximum value of the signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#maxValue">#</a>] <!-- maxValue --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="minFrequency" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:minFrequency</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency">http://www.biosignalml.org/ontologies/2011/04/biosignalml#minFrequency</a></div><div class="para"><span property="dc:description" >The minimum frequency, in Hertz, contained in the signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#minFrequency">#</a>] <!-- minFrequency --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="minValue" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:minValue</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue">http://www.biosignalml.org/ontologies/2011/04/biosignalml#minValue</a></div><div class="para"><span property="dc:description" >The minimum value of the signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#minValue">#</a>] <!-- minValue --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="period" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:period</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#period">http://www.biosignalml.org/ontologies/2011/04/biosignalml#period</a></div><div class="para"><span property="dc:description" >The sampling period, in seconds, of a uniformly sampled signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal"><a href="#UniformSignal">UniformSignal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#period">#</a>] <!-- period --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="preFilter" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:preFilter</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter">http://www.biosignalml.org/ontologies/2011/04/biosignalml#preFilter</a></div><div class="para"><span property="dc:description" >Pre-filtering applied to a signal as part of collection.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Filter"><a href="#Filter">Filter</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#preFilter">#</a>] <!-- preFilter --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="rate" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:rate</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate">http://www.biosignalml.org/ontologies/2011/04/biosignalml#rate</a></div><div class="para"><span property="dc:description" >The sampling rate, in Hertz, of a uniformly sampled signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UniformSignal"><a href="#UniformSignal">UniformSignal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.w3.org/2001/XMLSchema#double"><a href="http://www.w3.org/2001/XMLSchema#double">xsd:double</a></span>
+ </td></tr><tr><th colspan="2">Datatype Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#DatatypeProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#rate">#</a>] <!-- rate --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="recording" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:recording</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording">http://www.biosignalml.org/ontologies/2011/04/biosignalml#recording</a></div><div class="para"><span property="dc:description" >The Recording a Signal is part of.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"><a href="#Recording">Recording</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#recording">#</a>] <!-- recording --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="sensor" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor" typeof="owl:ObjectProperty">
+      <h3>Property: bsml:sensor</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor">http://www.biosignalml.org/ontologies/2011/04/biosignalml#sensor</a></div><div class="para"><span property="dc:description" >What was used to collect or derive an electrical signal</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Sensor"><a href="#Sensor">Sensor</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#sensor">#</a>] <!-- sensor --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="signalType" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:signalType</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType">http://www.biosignalml.org/ontologies/2011/04/biosignalml#signalType</a></div><div class="para"><span property="dc:description" >A signal's generic type.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SignalType"><a href="#SignalType">SignalType</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#signalType">#</a>] <!-- signalType --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="source" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:source</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#source">http://www.biosignalml.org/ontologies/2011/04/biosignalml#source</a></div><div class="para"><span property="dc:description" >The source of a Recording or Signal.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>   <span rel="rdfs:domain" resource="[_:TsvtGoHQ5]"></span>
+                  <span about="[_:TsvtGoHQ5]" typeof="owl:Class"></span>
+                  <span about="[_:TsvtGoHQ5]" rel="owl:unionOf" resource="[_:TsvtGoHQ4]"></span>  <span about="[_:TsvtGoHQ4]" typeof="rdf:Description"></span>
+                  <span about="[_:TsvtGoHQ4]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording">bsml:Recording</a></span>
+                  <span about="[_:TsvtGoHQ4]" rel="rdf:rest" resource="[_:TsvtGoHQ3]"></span> or <span about="[_:TsvtGoHQ3]" typeof="rdf:Description"></span>
+                            <span about="[_:TsvtGoHQ3]" rel="rdf:first" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal">bsml:Signal</a></span> <span about="[_:TsvtGoHQ3]" rel="rdf:rest" href="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"></span> </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Source"><a href="#Source">Source</a></span>
+ </td></tr><tr><th>Sub property of:</th>
+ <td>  <span rel="rdfs:subPropertyOf" href="http://purl.org/dc/terms/source"><a href="http://purl.org/dc/terms/source">dcterms:source</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#source">#</a>] <!-- source --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="units" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units" typeof="owl:FunctionalProperty">
+      <h3>Property: bsml:units</h3>
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#units">http://www.biosignalml.org/ontologies/2011/04/biosignalml#units</a></div><div class="para"><span property="dc:description" >The physical units that are represented by a signal's data values.</span></div><div class="para" property="rdfs:comment" >Specification of units allows for consistency checking and automatic conversion.</div>
+     <table style="th { float: top; }">
+      <tr><th>Domain:</th>
+ <td>  <span rel="rdfs:domain" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Signal"><a href="#Signal">Signal</a></span>
+ </td></tr>
+      <tr><th>Range:</th>
+ <td>  <span rel="rdfs:range" href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure"><a href="#UnitOfMeasure">UnitOfMeasure</a></span>
+ </td></tr><tr><th colspan="2">Object Property</th>
+ <td> <span rel="rdf:type" href="http://www.w3.org/2002/07/owl#ObjectProperty"></span> </td></tr><tr><th colspan="2">Functional Property</th>
+ <td>  </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0 ; padding: 0">[<a href="#units">#</a>] <!-- units --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><h2 class="specgroup">Individuals</h2>
+ 
+
+
+<div class="specterm" id="BP" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:BP</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP">http://www.biosignalml.org/ontologies/2011/04/biosignalml#BP</a></div><div class="para"><em property="dc:title" >Blood Pressure</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#SignalType">SignalType</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#BP">#</a>] <!-- BP --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="ECG" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:ECG</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#ECG</a></div><div class="para"><em property="dc:title" >Electrocardiogram</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#SignalType">SignalType</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#ECG">#</a>] <!-- ECG --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="EDF" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:EDF</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDF</a></div><div class="para"><em property="dc:title" >European Data Format</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#EDF">#</a>] <!-- EDF --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="EDFplus" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:EDFplus</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EDFplus</a></div><div class="para"><em property="dc:title" >European Data Format +</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#EDFplus">#</a>] <!-- EDFplus --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="EEG" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:EEG</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#EEG</a></div><div class="para"><em property="dc:title" >Electroencephalogram</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#SignalType">SignalType</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#EEG">#</a>] <!-- EEG --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="FieldML" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:FieldML</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML">http://www.biosignalml.org/ontologies/2011/04/biosignalml#FieldML</a></div><div class="para"></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#FieldML">#</a>] <!-- FieldML --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="MFER" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:MFER</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER">http://www.biosignalml.org/ontologies/2011/04/biosignalml#MFER</a></div><div class="para"><em property="dc:title" >Medical Format Encoding Rules</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#MFER">#</a>] <!-- MFER --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="RAW" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:RAW</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW">http://www.biosignalml.org/ontologies/2011/04/biosignalml#RAW</a></div><div class="para"><span property="dc:description" >Raw, binary data with unknown format.</span></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#RAW">#</a>] <!-- RAW --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="SCP_ECG" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:SCP_ECG</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SCP_ECG</a></div><div class="para"><em property="dc:title" >Standard Communications Protocol for ECG</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#SCP_ECG">#</a>] <!-- SCP_ECG --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="SDF" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:SDF</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF">http://www.biosignalml.org/ontologies/2011/04/biosignalml#SDF</a></div><div class="para"><em property="dc:title" >Stanford Data Format</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#SDF">#</a>] <!-- SDF --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div><div class="specterm" id="WFDB" about="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB" typeof="owl:NamedIndividual">
+      <h3>Individual: bsml:WFDB</h3> 
+      <div class="uri para">URI: <a href="http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB">http://www.biosignalml.org/ontologies/2011/04/biosignalml#WFDB</a></div><div class="para"><em property="dc:title" >WaveForm DataBase</em></div>
+     <table style="th { float: top; }">
+      <tr><th>Type:</th>
+ <td>  <a href="#Format">Format</a>
+ <a href="http://www.w3.org/2002/07/owl#NamedIndividual">owl:NamedIndividual</a>
+ </td></tr>
+      </table>
+      
+      <p style="float: right; font-size: small; margin:0; padding: 0">[<a href="#WFDB">#</a>] <!-- WFDB --> [<a href="#glance">back to top</a>]</p>
+      <br/>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<!-- End of the terms list -->
+  </div>
+
+ </div>
+
+ <div class="back">
+  <div id="references">
+   <h2>A. References</h2>
+<!--
+   <dl>
+    <dt class="label" id="ref-some">name</dt>
+    <dd>
+     <em><a href="http://.../">long name</a></em> description...
+    </dd>
+    <dt class="label" id="ref-rfc2119">IETF RFC 2119</dt>
+    <dd>
+     <em><a href="http://www.ietf.org/rfc/rfc2119.txt">RFC 2119: Key words
+     for use in RFCs to Indicate Requirement Levels</a></em>. Internet
+     Engineering Task Force, 1997 (see http://www.ietf.org/rfc/rfc2119.txt).
+    </dd>
+   </dl>
+-->
+  </div>
+
+  <div id="changes">
+   <h2>B. Changes in this version</h2>
+   <p>
+    <span class="todo">TODO</span> Update change history...
+   </p>
+   <ul>
+    <li><p>31 August 2011</p>
+     <ul class="changes">
+      <li>Rename 'sampleRate' property to 'rate'</li>
+     </ul>
+    </li>
+    <li><p>29 August 2011</p>
+     <ul class="changes">
+      <li>add 'Collection' and 'Database' classes</li>
+      <li>remove 'Resource' and Resolution' classes</li>
+      <li>use 'description' instead of 'comment' to describe entities</li>
+      <li>add 'deprecated' comments</li>
+     </ul>
+    </li>
+   </ul>
+  </div>
+
+  <div id="acknowledgments">
+   <h2>C. Acknowledgements</h2>
+   <p>
+    <span class="todo">TODO</span> Acknowledge tools used to make this...
+   </p>
+  </div>
+ </div>
+
+ <div id="footer">
+ </div>
+
+ </body>
+
+</html>
