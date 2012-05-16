@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+{% set headtitle = 'BioSignalML Repository' %}
+{% set javascript = [ ] %}
+{% set stylesheets = ['stylesheet.css'] %}
+{# if $refresh#<meta http-equiv='Refresh' content='$refresh'/> #}
+ <head>
+  <title>{{ headtitle }}</title>
+  <link rel="shortcut icon" href="/static/favicon.ico"/>{%
+  for script in javascript %}
+   <script type="text/javascript" src="{{ static_url("script/%s" % script) }}"></script>
+  {% end %}
+  {% for css in stylesheets %}
+   <link type="text/css" href="{{ static_url("css/%s" % css) }}" rel="stylesheet"/>
+  {% end %}
+ </head>
+ <body>
+  <noscript>These pages use Javascript - please enable it in your browser</noscript>
+  <div id="header">
+   <div class="spacer"></div>
+   {# % module Menu(level=level) % #}
+  </div>
+  {# % if message %}<div id="message">{{ message }}</div>{% end % #}
+  <div id="content">
+   <div class="title"><h1>{{ title }}</h1></div>
+  </div>
+  <div id="footer"></div>
+ </body>
+</html>
