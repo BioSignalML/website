@@ -18,6 +18,16 @@ import tornado.web
 from tornado.options import options, define
 
 
+class BioSignalMLOntology(tornado.web.StaticFileHandler):
+#========================================================
+
+  def parse_url_path(self, url_path):
+  #----------------------------------
+    (n, p) = os.path.splitext(url_path)
+    if not p: p = '.rdf'
+    return ''.join([n, p])
+
+
 class Ontologies(tornado.web.RequestHandler):
 #============================================
 
@@ -48,7 +58,7 @@ if __name__ == '__main__':
   ontology_path = os.path.join(os.path.dirname(__file__), 'ontologies/2011/04')
 
   application = tornado.web.Application([
-      (r'/ontologies/2011.04/(.*)', tornado.web.StaticFileHandler, {'path': ontology_path }),
+      (r'/ontologies/2011.04/(.*)', BioSignalMLOntology, {'path': ontology_path }),
       (r'/ontologies/(.*)',                 Ontologies),
       (r'/static/(.*)',             tornado.web.StaticFileHandler, {'path': static_path }),
       (r'/(.*)',                            WebPages),
