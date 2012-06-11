@@ -18,24 +18,22 @@ import tornado.web
 from tornado.options import options, define
 
 
-class BioSignalMLOntology(tornado.web.StaticFileHandler):
-#========================================================
+class Ontologies(tornado.web.StaticFileHandler):
+#===============================================
 
   def parse_url_path(self, url_path):
   #----------------------------------
     (n, p) = os.path.splitext(url_path)
-    if not p: p = '.rdf'
+    if not p:
+      accept = [ k[0].strip() for k in
+                 [ a.split(';', 1) for a in
+                   self.request.headers.get('Accept', '*/*').split(',') ] ]
+      if    'text/turtle' in accept: p = '.ttl'
+      elif ('application/rdf+xml' in accept
+         or 'application/xml' in accept
+         or '*/*' in accept): p = '.rdf'
+      else: self.send_error(415)  # Unsupported Media Type
     return ''.join([n, p])
-
-
-class Ontologies(tornado.web.RequestHandler):
-#============================================
-
-  def get(self, name):
-  #-------------------
-    # Check accept header and send RDF...
-    self.write(name)
-    #self.render('ontologies.html')
 
 
 class WebPages(tornado.web.RequestHandler):
@@ -50,19 +48,18 @@ class WebPages(tornado.web.RequestHandler):
 if __name__ == '__main__':
 #=========================
 
-  define('debug', True)
+  define('debug', False)
   define('host', 'localhost')
   define('port', 8085)
 
   static_path = os.path.join(os.path.dirname(__file__), 'static')
-  ontology_path = os.path.join(os.path.dirname(__file__), 'ontologies/2011/04')
+  ontology_path = os.path.join(os.path.dirname(__file__), 'ontologies')
 
   application = tornado.web.Application([
-      (r'/ontologies/2011.04/(.*)', BioSignalMLOntology, {'path': ontology_path }),
-      (r'/ontologies/(.*)',                 Ontologies),
-      (r'/static/(.*)',             tornado.web.StaticFileHandler, {'path': static_path }),
-      (r'/(.*)',                            WebPages),
-      (r'',                                 WebPages),      
+      (r'/ontologies/(.*)', Ontologies,                    {'path': ontology_path }),
+      (r'/static/(.*)',     tornado.web.StaticFileHandler, {'path': static_path }),
+      (r'/(.*)',            WebPages),
+      (r'',                 WebPages),      
       ],
     gzip = True,
     template_path = 'templates',
