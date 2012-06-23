@@ -1,0 +1,214 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix bsml: <http://www.biosignalml.org/ontologies/2011/04/biosignalml#> .
+@prefix drug: <http://www.biosignalml.org/ontologies/examples/drug#> .
+
+@prefix pbterms: <http://www.biosignalml.org/ontologies/examples/physiobank#> .
+
+
+<http://www.biosignalml.org/ontologies/examples/physiobank> a owl:Ontology .
+
+
+dcterms:description a owl:AnnotationProperty .
+
+
+
+pbterms:age
+  rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  dcterms:description "The age, in years, of a patient." ;
+  rdfs:range xsd:double .
+
+
+pbterms:AnnM
+  dcterms:description "A Physiobank machine generated annotation." ;
+  a bsml:SignalType .
+
+pbterms:AnnR
+  dcterms:description "A Physiobank reference annotation." ;
+  a bsml:SignalType .
+
+pbterms:Annotator
+  a owl:Class .
+
+pbterms:annotator
+  rdf:type owl:FunctionalProperty, owl:ObjectProperty ;
+  dcterms:description "The annotator used to generate an annoation signal." ;
+  rdfs:range pbterms:Annotator .
+
+pbterms:al
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:alarms
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:all
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:ari
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:cvp
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:ecg
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:event
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:in
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:not
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:pap
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:ple
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:pu
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:pu0
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:pu1
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:qrs
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:qt1
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:qt2
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:resp
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:trg
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+#
+#pbterms:16a
+#  rdf:type pbterms:Annotator, owl:NamedIndividual .
+#
+pbterms:alM
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:apn
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:arou
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:atr
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:comp
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:hypn
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:log
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:man
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:oart
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:q1c
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:q2c
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:qrsc
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:seizures
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:st
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:sta
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:stb
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:stc
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+pbterms:str
+  rdf:type pbterms:Annotator, owl:NamedIndividual .
+
+
+[]
+  rdf:type owl:AllDifferent ;
+  owl:distinctMembers (
+    pbterms:al
+    pbterms:alarms
+    pbterms:all
+    pbterms:ari
+    pbterms:cvp
+    pbterms:ecg
+    pbterms:event
+    pbterms:in
+    pbterms:not
+    pbterms:pap
+    pbterms:ple
+    pbterms:pu
+    pbterms:pu0
+    pbterms:pu1
+    pbterms:qrs
+    pbterms:qt1
+    pbterms:qt2
+    pbterms:resp
+    pbterms:trg
+#    pbterms:16a
+    pbterms:alM
+    pbterms:apn
+    pbterms:arou
+    pbterms:atr
+    pbterms:comp
+    pbterms:hypn
+    pbterms:log
+    pbterms:man
+    pbterms:oart
+    pbterms:q1c
+    pbterms:q2c
+    pbterms:qrsc
+    pbterms:seizures
+    pbterms:st
+    pbterms:sta
+    pbterms:stb
+    pbterms:stc
+    pbterms:str
+    ) .
+
+
+pbterms:count
+  rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
+  dcterms:description "The number of discrete things, for example Events." ;
+  rdfs:range xsd:integer .
+
+pbterms:database
+  dcterms:description "A PhysioBank database the recording is part of." ;
+  rdfs:domain bsml:Recording ;
+  rdfs:subPropertyOf dcterms:isPartOf ;
+  rdf:type owl:ObjectProperty .
+
+
+pbterms:Gender
+  a owl:Class .
+
+pbterms:gender
+  rdf:type owl:FunctionalProperty, owl:ObjectProperty ;
+  dcterms:description "The gender of a patient." ;
+  rdfs:range pbterms:Gender .
+
+pbterms:Female
+  rdf:type pbterms:Gender, owl:NamedIndividual .
+
+pbterms:Male
+  rdf:type pbterms:Gender, owl:NamedIndividual .
+
+[]
+  rdf:type owl:AllDifferent ;
+  owl:distinctMembers (
+    pbterms:Female
+    pbterms:Male
+    ) .
+
+
+pbterms:Info
+  a owl:Class .
+
+pbterms:info
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "Additional information about a recording." ;
+  rdfs:range pbterms:Info .
+
+
+pbterms:medication
+  rdf:type owl:ObjectProperty ;
+  dcterms:description "A drug prescribed to a patient." ;
+  rdfs:range drug:Medication .
+
+
+

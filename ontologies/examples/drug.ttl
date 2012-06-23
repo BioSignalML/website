@@ -1,0 +1,117 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+@prefix drug: <http://www.biosignalml.org/ontologies/examples/drug#> .
+
+
+<http://www.biosignalml.org/ontologies/examples/drug> a owl:Ontology .
+
+
+dcterms:description a owl:AnnotationProperty .
+
+
+drug:Medication
+  dcterms:description "A prescribed medication or drug." ;
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Medication> ;
+  rdf:type owl:Class .
+
+
+
+drug:Aldomet
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Aldomet> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Coumadin
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Coumadin> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Diapres
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Digoxin
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Digoxin> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Dilantin
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Dilantin> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Heparin
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Dilantin> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Hydrochlorthiazide
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Hydrochlorothiazide> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Hydrodiuril
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Hydrodiuril> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Hygroton
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Hygroton> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Inderal
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Inderal> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Isordil
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Isordil> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:KCl
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Potassium_chloride> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Lasix
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Lasix> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Nitropaste
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Norpace
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Norpace> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Pronestyl
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Pronestyl> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Quinaglute
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Quinaglute> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+drug:Quinidine
+  rdfs:seeAlso <http://en.wikipedia.org/wiki/Quinidine> ;
+  rdf:type drug:Medication, owl:NamedIndividual .
+
+
+
+[]
+  rdf:type owl:AllDifferent ;
+  owl:distinctMembers (
+    drug:Aldomet
+    drug:Coumadin
+    drug:Diapres
+    drug:Digoxin
+    drug:Dilantin
+    drug:Heparin
+    drug:Hydrochlorthiazide
+    drug:Hydrodiuril
+    drug:Hygroton
+    drug:Inderal
+    drug:Isordil
+    drug:KCl
+    drug:Lasix
+    drug:Nitropaste
+    drug:Norpace
+    drug:Pronestyl
+    drug:Quinaglute
+    drug:Quinidine
+    ) .
+
+
