@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:dcterms="http://purl.org/dc/terms/" xmlns:drug="http://www.biosignalml.org/ontologies/examples/drug#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://purl.org/dc/terms/description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Medication">
+    <dcterms:description>A prescribed medication or drug.</dcterms:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Medication">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Medication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Aldomet">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Aldomet"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Aldomet">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Aldomet">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Coumadin">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Coumadin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Coumadin">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Coumadin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Diapres">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Diapres">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Digoxin">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digoxin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Digoxin">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Digoxin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Dilantin">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Dilantin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Dilantin">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Dilantin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Heparin">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Dilantin"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Heparin">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Heparin">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hydrochlorothiazide"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hydrodiuril"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hygroton">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hygroton"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hygroton">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hygroton">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Inderal">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Inderal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Inderal">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Inderal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Isordil">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Isordil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Isordil">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Isordil">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#KCl">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Potassium_chloride"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#KCl">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#KCl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Lasix">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Lasix"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Lasix">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Lasix">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Nitropaste">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Nitropaste">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Norpace">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Norpace"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Norpace">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Norpace">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Pronestyl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Quinaglute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinidine">
+    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Quinidine"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinidine">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinidine">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Quinidine"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <rdf:rest rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <rdf:rest rdf:nodeID="genid3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Norpace"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:rest rdf:nodeID="genid4"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Nitropaste"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:rest rdf:nodeID="genid5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Lasix"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:rest rdf:nodeID="genid6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#KCl"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:rest rdf:nodeID="genid7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid9">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Isordil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid9">
+    <rdf:rest rdf:nodeID="genid8"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid10">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Inderal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid10">
+    <rdf:rest rdf:nodeID="genid9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid11">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Hygroton"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid11">
+    <rdf:rest rdf:nodeID="genid10"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid12">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid12">
+    <rdf:rest rdf:nodeID="genid11"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid13">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid13">
+    <rdf:rest rdf:nodeID="genid12"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid14">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Heparin"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid14">
+    <rdf:rest rdf:nodeID="genid13"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid15">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Dilantin"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid15">
+    <rdf:rest rdf:nodeID="genid14"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid16">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Digoxin"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid16">
+    <rdf:rest rdf:nodeID="genid15"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid17">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Diapres"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid17">
+    <rdf:rest rdf:nodeID="genid16"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid18">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Coumadin"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid18">
+    <rdf:rest rdf:nodeID="genid17"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid19">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Aldomet"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid19">
+    <rdf:rest rdf:nodeID="genid18"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <owl:distinctMembers rdf:nodeID="genid19"/>
+  </rdf:Description>
+</rdf:RDF>
