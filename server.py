@@ -33,6 +33,7 @@ class Ontologies(tornado.web.StaticFileHandler):
          or 'application/xml' in accept
          or '*/*' in accept): p = '.rdf'
       else: self.send_error(415)  # Unsupported Media Type
+    self.set_header('Access-Control-Allow-Origin', '*')
     return ''.join([n, p])
 
 
