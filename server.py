@@ -23,7 +23,7 @@ class Ontologies(tornado.web.StaticFileHandler):
 
   def parse_url_path(self, url_path):
   #----------------------------------
-    (n, p) = os.path.splitext(url_path)
+    (n, p) = os.path.splitext(url_path.rsplit('#', 1)[0])
     if not p:
       accept = [ k[0].strip() for k in
                  [ a.split(';', 1) for a in
