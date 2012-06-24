@@ -10,13 +10,13 @@
     <dcterms:description>A prescribed medication or drug.</dcterms:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Medication">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Medication"/>
+    <rdfs:seeAlso rdf:resource="http://dbpedia.org/resource/Medication"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Medication">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Aldomet">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Aldomet"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Aldomet"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Aldomet">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -25,7 +25,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Coumadin">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Coumadin"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Coumadin"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Coumadin">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -40,7 +40,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Digoxin">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Digoxin"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Digoxin"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Digoxin">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -49,7 +49,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Dilantin">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Dilantin"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dilantin"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Dilantin">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -58,7 +58,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Heparin">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Dilantin"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Dilantin"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Heparin">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -67,7 +67,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hydrochlorothiazide"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Hydrochlorothiazide"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrochlorthiazide">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -76,7 +76,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hydrodiuril"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Hydrodiuril"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hydrodiuril">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -85,7 +85,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hygroton">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Hygroton"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Hygroton"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Hygroton">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -94,7 +94,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Inderal">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Inderal"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Inderal"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Inderal">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -103,7 +103,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Isordil">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Isordil"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Isordil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Isordil">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -112,7 +112,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#KCl">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Potassium_chloride"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Potassium_chloride"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#KCl">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -121,7 +121,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Lasix">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Lasix"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Lasix"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Lasix">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -136,7 +136,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Norpace">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Norpace"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Norpace"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Norpace">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -145,7 +145,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Pronestyl"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Pronestyl"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Pronestyl">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -154,7 +154,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Quinaglute"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quinaglute"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinaglute">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
@@ -163,7 +163,7 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinidine">
-    <rdfs:seeAlso rdf:resource="http://en.wikipedia.org/wiki/Quinidine"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/Quinidine"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/drug#Quinidine">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
