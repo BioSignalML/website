@@ -1,0 +1,70 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xmls: <http://www.w3.org/2001/XMLSchema#> .
+@prefix uome-list: <http://www.sbpax.org/uome/list.owl#> .
+@prefix uome-core: <http://www.sbpax.org/uome/core.owl#> .
+@prefix unit:	<http://www.biosignalml.org/ontologies/examples/unit#> .
+
+
+<http://www.biosignalml.org/ontologies/examples/unit>
+    a owl:Ontology ;
+    owl:imports <http://www.sbpax.org/uome/list.owl> .
+
+
+unit:Centilitre
+    uome-core:derivedBy [
+        uome-core:withFactor 0.01 ;
+        uome-core:withUnit uome-list:Litre ;
+        a uome-core:ScalingExpression
+    ] ;
+    uome-core:unitName "centilitre"^^xmls:string ;
+    uome-core:unitSymbol "cl"^^xmls:string ;
+    uome-core:unitTerm unit:CentilitreTerm ;
+    a uome-core:UnitOfMeasurement .
+
+unit:CentilitreTerm
+    a uome-core:UnitOfMeasurementVocabulary .
+
+
+unit:CentilitrePerMinute
+    uome-core:derivedBy [
+        uome-core:withUnit1 unit:Centilitre ;
+        uome-core:withUnit2 uome-list:Minute ;
+        a uome-core:QuotientExpression
+    ] ;
+    uome-core:unitName "centilitre per minute"^^xmls:string ;
+    uome-core:unitSymbol "cl/min"^^xmls:string ;
+    uome-core:unitTerm unit:CentilitrePerMinuteTerm ;
+    a uome-core:UnitOfMeasurement .
+
+unit:CentilitrePerMinuteTerm
+    a uome-core:UnitOfMeasurementVocabulary .
+
+
+unit:DecilitrePerMinute
+    uome-core:derivedBy [
+        uome-core:withUnit1 uome-list:Decilitre ;
+        uome-core:withUnit2 uome-list:Minute ;
+        a uome-core:QuotientExpression
+    ] ;
+    uome-core:unitName "decilitre per minute"^^xmls:string ;
+    uome-core:unitSymbol "dl/min"^^xmls:string ;
+    uome-core:unitTerm unit:DecilitrePerMinuteTerm ;
+    a uome-core:UnitOfMeasurement .
+
+unit:DecilitrePerMinuteTerm
+    a uome-core:UnitOfMeasurementVocabulary .
+
+
+unit:MillimetresOfWater
+    uome-core:derivedBy [
+        uome-core:withFactor 7.35559 ;
+        uome-core:withUnit uome-list:Torr ;
+        a uome-core:ScalingExpression
+    ] ;
+    uome-core:unitName "millimetres of water"^^xmls:string ;
+    uome-core:unitSymbol "mmH2O"^^xmls:string ;
+    uome-core:unitTerm unit:MillimetresOfWaterTerm ;
+    a uome-core:UnitOfMeasurement .
+
+unit:MillimetresOfWaterTerm
+    a uome-core:UnitOfMeasurementVocabulary .
