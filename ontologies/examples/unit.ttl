@@ -18,11 +18,7 @@ unit:Centilitre
     ] ;
     uome-core:unitName "centilitre"^^xmls:string ;
     uome-core:unitSymbol "cl"^^xmls:string ;
-    uome-core:unitTerm unit:CentilitreTerm ;
     a uome-core:UnitOfMeasurement .
-
-unit:CentilitreTerm
-    a uome-core:UnitOfMeasurementVocabulary .
 
 
 unit:CentilitrePerMinute
@@ -33,11 +29,7 @@ unit:CentilitrePerMinute
     ] ;
     uome-core:unitName "centilitre per minute"^^xmls:string ;
     uome-core:unitSymbol "cl/min"^^xmls:string ;
-    uome-core:unitTerm unit:CentilitrePerMinuteTerm ;
     a uome-core:UnitOfMeasurement .
-
-unit:CentilitrePerMinuteTerm
-    a uome-core:UnitOfMeasurementVocabulary .
 
 
 unit:DecilitrePerMinute
@@ -48,11 +40,7 @@ unit:DecilitrePerMinute
     ] ;
     uome-core:unitName "decilitre per minute"^^xmls:string ;
     uome-core:unitSymbol "dl/min"^^xmls:string ;
-    uome-core:unitTerm unit:DecilitrePerMinuteTerm ;
     a uome-core:UnitOfMeasurement .
-
-unit:DecilitrePerMinuteTerm
-    a uome-core:UnitOfMeasurementVocabulary .
 
 
 unit:MillimetresOfWater
@@ -63,8 +51,16 @@ unit:MillimetresOfWater
     ] ;
     uome-core:unitName "millimetres of water"^^xmls:string ;
     uome-core:unitSymbol "mmH2O"^^xmls:string ;
-    uome-core:unitTerm unit:MillimetresOfWaterTerm ;
     a uome-core:UnitOfMeasurement .
 
-unit:MillimetresOfWaterTerm
-    a uome-core:UnitOfMeasurementVocabulary .
+
+unit:CentimetresOfWater
+    uome-core:derivedBy [
+        uome-core:withFactor 0.735559 ;
+        uome-core:withUnit uome-list:Torr ;
+        a uome-core:ScalingExpression
+    ] ;
+    uome-core:unitName "centimetres of water"^^xmls:string ;
+    uome-core:unitSymbol "cmH2O"^^xmls:string ;
+    a uome-core:UnitOfMeasurement .
+
