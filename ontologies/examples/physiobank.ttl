@@ -161,6 +161,9 @@ pbterms:str
     pbterms:str
     ) .
 
+pbterms:AnnotationData
+  rdf:type bsml:UnitOfMeasure .
+
 
 pbterms:count
   rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -168,7 +171,7 @@ pbterms:count
   rdfs:range xsd:integer .
 
 pbterms:database
-  dcterms:description "A PhysioBank database the recording is part of." ;
+  dcterms:description "The PhysioBank database the recording is part of." ;
   rdfs:domain bsml:Recording ;
   rdfs:subPropertyOf dcterms:isPartOf ;
   rdf:type owl:ObjectProperty .
@@ -211,4 +214,375 @@ pbterms:medication
   rdfs:range drug:Medication .
 
 
+
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+
+
+# Beat annotation codes:
+
+pbterms:normalBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "NORMAL" ;
+  rdfs:comment "Normal beat" .
+
+pbterms:lbbbBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "LBBB" ;
+  rdfs:comment "Left bundle branch block beat" .
+
+pbterms:rbbbBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "RBBB" ;
+  rdfs:comment "Right bundle branch block beat" .
+
+pbterms:bbbBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "BBB" ;
+  rdfs:comment "Bundle branch block beat (unspecified)" .
+
+pbterms:apcBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "APC" ;
+  rdfs:comment "Atrial premature beat" .
+
+pbterms:aberrBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "ABERR" ;
+  rdfs:comment "Aberrated atrial premature beat" .
+
+pbterms:npcBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "NPC" ;
+  rdfs:comment "Nodal (junctional) premature beat" .
+
+pbterms:svpbBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "SVPB" ;
+  rdfs:comment "Supraventricular premature or ectopic beat (atrial or nodal)" .
+
+pbterms:pvcBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "PVC" ;
+  rdfs:comment "Premature ventricular contraction" .
+
+pbterms:rontBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "RONT" ;
+  rdfs:comment "R-on-T premature ventricular contraction" .
+
+pbterms:fusionBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "FUSION" ;
+  rdfs:comment "Fusion of ventricular and normal beat" .
+
+pbterms:aescBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "AESC" ;
+  rdfs:comment "Atrial escape beat" .
+
+pbterms:nescBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "NESC" ;
+  rdfs:comment "Nodal (junctional) escape beat" .
+
+pbterms:svescBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "SVESC" ;
+  rdfs:comment "Supraventricular escape beat (atrial or nodal) [1]" .
+
+pbterms:vescBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "VESC" ;
+  rdfs:comment "Ventricular escape beat" .
+
+pbterms:paceBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "PACE" ;
+  rdfs:comment "Paced beat" .
+
+pbterms:pfusBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "PFUS" ;
+  rdfs:comment "Fusion of paced and normal beat" .
+
+pbterms:unknownBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "UNKNOWN" ;
+  rdfs:comment "Unclassifiable beat" .
+
+pbterms:learnBeat
+  a pbterms:AnnotationCode ;
+  a pbterms:BeatAnnotation ;
+  rdfs:label "LEARN" ;
+  rdfs:comment "Beat not classified during learning" .
+
+
+# Non-beat annotation codes:
+
+pbterms:vfonAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "VFON" ;
+  rdfs:comment "Start of ventricular flutter/fibrillation" .
+
+pbterms:flwavAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "FLWAV" ;
+  rdfs:comment "Ventricular flutter wave" .
+
+pbterms:vfoffAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "VFOFF" ;
+  rdfs:comment "End of ventricular flutter/fibrillation" .
+
+pbterms:napcAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "NAPC" ;
+  rdfs:comment "Non-conducted P-wave (blocked APC) [4]" .
+
+pbterms:wfonAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "WFON" ;
+  rdfs:comment "Waveform onset [4]" .
+
+pbterms:wfoffAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "WFOFF" ;
+  rdfs:comment "Waveform end [4]" .
+
+pbterms:pwaveAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "PWAVE" ;
+  rdfs:comment "Peak of P-wave [4]" .
+
+pbterms:twaveAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "TWAVE" ;
+  rdfs:comment "Peak of T-wave [4]" .
+
+pbterms:uwaveAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "UWAVE" ;
+  rdfs:comment "Peak of U-wave [4]" .
+
+pbterms:pqAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "PQ" ;
+  rdfs:comment "PQ junction" .
+
+pbterms:jptAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "JPT" ;
+  rdfs:comment "J-point" .
+
+pbterms:pacespAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "PACESP" ;
+  rdfs:comment "(Non-captured) pacemaker artifact" .
+
+pbterms:arfctAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "ARFCT" ;
+  rdfs:comment "Isolated QRS-like artifact [2]" .
+
+pbterms:noiseAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "NOISE" ;
+  rdfs:comment "Change in signal quality [2]" .
+
+pbterms:rhythmAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "RHYTHM" ;
+  rdfs:comment "Rhythm change [3]" .
+
+pbterms:stchAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "STCH" ;
+  rdfs:comment "ST segment change [1,3]" .
+
+pbterms:tchAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "TCH" ;
+  rdfs:comment "T-wave change [1,3,4]" .
+
+pbterms:systoleAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "SYSTOLE" ;
+  rdfs:comment "Systole [1]" .
+
+pbterms:diastoleAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "DIASTOLE" ;
+  rdfs:comment "Diastole [1]" .
+
+pbterms:measureAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "MEASURE" ;
+  rdfs:comment "Measurement annotation [1,3]" .
+
+pbterms:noteAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "NOTE" ;
+  rdfs:comment "Comment annotation [3]" .
+
+pbterms:linkAnnot
+  a pbterms:AnnotationCode ;
+  rdfs:label "LINK" ;
+  rdfs:comment "Link to external data [5]" .
+
+
+# Rhythm changes:
+
+pbterms:atrialBigeminy
+  a pbterms:RhythmChange ;
+  rdfs:label "(AB" ;
+  rdfs:comment "Atrial bigeminy" .
+
+pbterms:atrialFibrillation
+  a pbterms:RhythmChange ;
+  rdfs:label "(AFIB" ;
+  rdfs:comment "Atrial fibrillation" .
+
+pbterms:atrialFlutter
+  a pbterms:RhythmChange ;
+  rdfs:label "(AFL" ;
+  rdfs:comment "Atrial flutter" .
+
+pbterms:ventricularBigeminy
+  a pbterms:RhythmChange ;
+  rdfs:label "(B" ;
+  rdfs:comment "Ventricular bigeminy" .
+
+pbterms:secondaryHeartBlock
+  a pbterms:RhythmChange ;
+  rdfs:label "(BII" ;
+  rdfs:comment "Secondary heart block" .
+
+pbterms:idioventricularRhythm
+  a pbterms:RhythmChange ;
+  rdfs:label "(IVR" ;
+  rdfs:comment "Idioventricular rhythm" .
+
+pbterms:normalSinusRhythm
+  a pbterms:RhythmChange ;
+  rdfs:label "(N" ;
+  rdfs:comment "Normal sinus rhythm" .
+
+pbterms:nodalRhythm
+  a pbterms:RhythmChange ;
+  rdfs:label "(NOD" ;
+  rdfs:comment "Nodal (A-V junctional) rhythm" .
+
+pbterms:pacedRhythm
+  a pbterms:RhythmChange ;
+  rdfs:label "(P" ;
+  rdfs:comment "Paced rhythm" .
+
+pbterms:preExcitation
+  a pbterms:RhythmChange ;
+  rdfs:label "(PREX" ;
+  rdfs:comment "Pre-excitation (WPW)" .
+
+pbterms:sinusBradycardia
+  a pbterms:RhythmChange ;
+  rdfs:label "(SBR" ;
+  rdfs:comment "Sinus bradycardia" .
+
+pbterms:supraventricularTachyarrhythmia
+  a pbterms:RhythmChange ;
+  rdfs:label "(SVTA" ;
+  rdfs:comment "Supraventricular tachyarrhythmia" .
+
+pbterms:ventricularTrigeminy
+  a pbterms:RhythmChange ;
+  rdfs:label "(T" ;
+  rdfs:comment "Ventricular trigeminy" .
+
+pbterms:ventricularFlutter
+  a pbterms:RhythmChange ;
+  rdfs:label "(VFL" ;
+  rdfs:comment "Ventricular flutter" .
+
+pbterms:ventricularTachycardia
+  a pbterms:RhythmChange ;
+  rdfs:label "(VT" ;
+  rdfs:comment "Ventricular tachycardia" .
+
+
+
+
+Notes:
+
+1. Codes SVESC, STCH, and TCH were first introduced in WFDB library version
+   4.0. Codes SYSTOLE, DIASTOLE, and MEASURE were first introduced in WFDB
+   library version 7.0.
+
+2. In MIT and ESC DB 'atr' files, each non-zero bit in the subtyp field
+   indicates that the corresponding signal contains noise (the least
+   significant bit corresponds to signal 0).
+
+3. The aux field contains an ASCII string (with prefixed byte count) describing
+   the rhythm, ST segment, T-wave change, measurement, or the nature of the
+   comment. By convention, the character that follows the byte count in the aux
+   field of a  RHYTHM annotation is '('. See the MIT-BIH Arrhythmia Database
+   Directory for a list of rhythm annotation strings. The most commonly used
+   rhythm annotation strings are:
+
+     String		Description
+     ======  ===========
+     (AB		   Atrial bigeminy
+     (AFIB		 Atrial fibrillation
+     (AFL		  Atrial flutter
+     (B		    Ventricular bigeminy
+     (BII		  Secondary heart block
+     (IVR		  Idioventricular rhythm
+     (N	   	 Normal sinus rhythm
+     (NOD	 	 Nodal (A-V junctional) rhythm
+     (P		    Paced rhythm
+     (PREX		 Pre-excitation (WPW)
+     (SBR		  Sinus bradycardia
+     (SVTA		 Supraventricular tachyarrhythmia
+     (T	   	 Ventricular trigeminy
+     (VFL	 	 Ventricular flutter
+     (VT     Ventricular tachycardia
+
+
+4. Codes WFON, WFOFF, PWAVE, TWAVE, and UWAVE were first introduced in DB
+   library version 8.3. The 'p' mnemonic now assigned to PWAVE was formerly
+   assigned to NAPC, and the 't' mnemonic now assigned to TWAVE was formerly
+   assigned to TCH. The obsolete codes PQ (designating the PQ junction) and JPT
+   (designating the J-point) are still defined in '<wfdb/ecgcodes.h>', but are
+   identical to WFON and WFOFF respectively.
+
+5. The LINK code was first introduced in WFDB library version 9.6. The aux
+   field of a  LINK annotation contains a URL (a uniform resource locator, in
+   the form 'http://machine.name/some/data', suitable for passing to a Web
+   browser such as Netscape or Mosaic). LINK annotations may be used to
+   associate extended text, images, or other data with an annotation file. If
+   the aux field contains any whitespace, text following the first whitespace
+   is taken as descriptive text to be displayed by a WFDB browser such as WAVE.
+
+The annotation codes in the table above are the predefined values of the anntyp
+field in a WFDB_Annotation. Other values in the range of 1 to ACMAX (defined in
+'<wfdb/ecgcodes.h>') are legal but do not have preassigned meanings. The
+constant NOTQRS, also defined in '<wfdb/ecgcodes.h>', is not a legal value for
+anntyp, but is a possible output of the macros discussed below.
 
