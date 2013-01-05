@@ -495,6 +495,9 @@
   <rdf:Description rdf:nodeID="genid1">
     <owl:distinctMembers rdf:nodeID="genid38"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationData">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#UnitOfMeasure"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#count">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -508,7 +511,7 @@
     <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#database">
-    <dcterms:description>A PhysioBank database the recording is part of.</dcterms:description>
+    <dcterms:description>The PhysioBank database the recording is part of.</dcterms:description>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#database">
     <rdfs:domain rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#Recording"/>
@@ -584,5 +587,566 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#medication">
     <rdfs:range rdf:resource="http://www.biosignalml.org/ontologies/examples/drug#Medication"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalBeat">
+    <rdfs:label>NORMAL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalBeat">
+    <rdfs:comment>Normal beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#lbbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#lbbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#lbbbBeat">
+    <rdfs:label>LBBB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#lbbbBeat">
+    <rdfs:comment>Left bundle branch block beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rbbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rbbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rbbbBeat">
+    <rdfs:label>RBBB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rbbbBeat">
+    <rdfs:comment>Right bundle branch block beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#bbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#bbbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#bbbBeat">
+    <rdfs:label>BBB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#bbbBeat">
+    <rdfs:comment>Bundle branch block beat (unspecified)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#apcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#apcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#apcBeat">
+    <rdfs:label>APC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#apcBeat">
+    <rdfs:comment>Atrial premature beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aberrBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aberrBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aberrBeat">
+    <rdfs:label>ABERR</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aberrBeat">
+    <rdfs:comment>Aberrated atrial premature beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#npcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#npcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#npcBeat">
+    <rdfs:label>NPC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#npcBeat">
+    <rdfs:comment>Nodal (junctional) premature beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svpbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svpbBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svpbBeat">
+    <rdfs:label>SVPB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svpbBeat">
+    <rdfs:comment>Supraventricular premature or ectopic beat (atrial or nodal)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pvcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pvcBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pvcBeat">
+    <rdfs:label>PVC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pvcBeat">
+    <rdfs:comment>Premature ventricular contraction</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rontBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rontBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rontBeat">
+    <rdfs:label>RONT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rontBeat">
+    <rdfs:comment>R-on-T premature ventricular contraction</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#fusionBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#fusionBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#fusionBeat">
+    <rdfs:label>FUSION</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#fusionBeat">
+    <rdfs:comment>Fusion of ventricular and normal beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aescBeat">
+    <rdfs:label>AESC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#aescBeat">
+    <rdfs:comment>Atrial escape beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nescBeat">
+    <rdfs:label>NESC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nescBeat">
+    <rdfs:comment>Nodal (junctional) escape beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svescBeat">
+    <rdfs:label>SVESC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#svescBeat">
+    <rdfs:comment>Supraventricular escape beat (atrial or nodal) [1]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vescBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vescBeat">
+    <rdfs:label>VESC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vescBeat">
+    <rdfs:comment>Ventricular escape beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#paceBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#paceBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#paceBeat">
+    <rdfs:label>PACE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#paceBeat">
+    <rdfs:comment>Paced beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pfusBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pfusBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pfusBeat">
+    <rdfs:label>PFUS</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pfusBeat">
+    <rdfs:comment>Fusion of paced and normal beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#unknownBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#unknownBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#unknownBeat">
+    <rdfs:label>UNKNOWN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#unknownBeat">
+    <rdfs:comment>Unclassifiable beat</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#learnBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#learnBeat">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#BeatAnnotation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#learnBeat">
+    <rdfs:label>LEARN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#learnBeat">
+    <rdfs:comment>Beat not classified during learning</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfonAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfonAnnot">
+    <rdfs:label>VFON</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfonAnnot">
+    <rdfs:comment>Start of ventricular flutter/fibrillation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#flwavAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#flwavAnnot">
+    <rdfs:label>FLWAV</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#flwavAnnot">
+    <rdfs:comment>Ventricular flutter wave</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfoffAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfoffAnnot">
+    <rdfs:label>VFOFF</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#vfoffAnnot">
+    <rdfs:comment>End of ventricular flutter/fibrillation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#napcAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#napcAnnot">
+    <rdfs:label>NAPC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#napcAnnot">
+    <rdfs:comment>Non-conducted P-wave (blocked APC) [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfonAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfonAnnot">
+    <rdfs:label>WFON</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfonAnnot">
+    <rdfs:comment>Waveform onset [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfoffAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfoffAnnot">
+    <rdfs:label>WFOFF</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#wfoffAnnot">
+    <rdfs:comment>Waveform end [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pwaveAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pwaveAnnot">
+    <rdfs:label>PWAVE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pwaveAnnot">
+    <rdfs:comment>Peak of P-wave [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#twaveAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#twaveAnnot">
+    <rdfs:label>TWAVE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#twaveAnnot">
+    <rdfs:comment>Peak of T-wave [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#uwaveAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#uwaveAnnot">
+    <rdfs:label>UWAVE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#uwaveAnnot">
+    <rdfs:comment>Peak of U-wave [4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pqAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pqAnnot">
+    <rdfs:label>PQ</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pqAnnot">
+    <rdfs:comment>PQ junction</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#jptAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#jptAnnot">
+    <rdfs:label>JPT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#jptAnnot">
+    <rdfs:comment>J-point</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacespAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacespAnnot">
+    <rdfs:label>PACESP</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacespAnnot">
+    <rdfs:comment>(Non-captured) pacemaker artifact</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#arfctAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#arfctAnnot">
+    <rdfs:label>ARFCT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#arfctAnnot">
+    <rdfs:comment>Isolated QRS-like artifact [2]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noiseAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noiseAnnot">
+    <rdfs:label>NOISE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noiseAnnot">
+    <rdfs:comment>Change in signal quality [2]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rhythmAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rhythmAnnot">
+    <rdfs:label>RHYTHM</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#rhythmAnnot">
+    <rdfs:comment>Rhythm change [3]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#stchAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#stchAnnot">
+    <rdfs:label>STCH</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#stchAnnot">
+    <rdfs:comment>ST segment change [1,3]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#tchAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#tchAnnot">
+    <rdfs:label>TCH</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#tchAnnot">
+    <rdfs:comment>T-wave change [1,3,4]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#systoleAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#systoleAnnot">
+    <rdfs:label>SYSTOLE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#systoleAnnot">
+    <rdfs:comment>Systole [1]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#diastoleAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#diastoleAnnot">
+    <rdfs:label>DIASTOLE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#diastoleAnnot">
+    <rdfs:comment>Diastole [1]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#measureAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#measureAnnot">
+    <rdfs:label>MEASURE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#measureAnnot">
+    <rdfs:comment>Measurement annotation [1,3]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noteAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noteAnnot">
+    <rdfs:label>NOTE</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#noteAnnot">
+    <rdfs:comment>Comment annotation [3]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#linkAnnot">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#AnnotationCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#linkAnnot">
+    <rdfs:label>LINK</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#linkAnnot">
+    <rdfs:comment>Link to external data [5]</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialBigeminy">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialBigeminy">
+    <rdfs:label>(AB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialBigeminy">
+    <rdfs:comment>Atrial bigeminy</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFibrillation">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFibrillation">
+    <rdfs:label>(AFIB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFibrillation">
+    <rdfs:comment>Atrial fibrillation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFlutter">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFlutter">
+    <rdfs:label>(AFL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#atrialFlutter">
+    <rdfs:comment>Atrial flutter</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularBigeminy">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularBigeminy">
+    <rdfs:label>(B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularBigeminy">
+    <rdfs:comment>Ventricular bigeminy</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#secondaryHeartBlock">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#secondaryHeartBlock">
+    <rdfs:label>(BII</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#secondaryHeartBlock">
+    <rdfs:comment>Secondary heart block</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#idioventricularRhythm">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#idioventricularRhythm">
+    <rdfs:label>(IVR</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#idioventricularRhythm">
+    <rdfs:comment>Idioventricular rhythm</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalSinusRhythm">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalSinusRhythm">
+    <rdfs:label>(N</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#normalSinusRhythm">
+    <rdfs:comment>Normal sinus rhythm</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nodalRhythm">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nodalRhythm">
+    <rdfs:label>(NOD</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#nodalRhythm">
+    <rdfs:comment>Nodal (A-V junctional) rhythm</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacedRhythm">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacedRhythm">
+    <rdfs:label>(P</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#pacedRhythm">
+    <rdfs:comment>Paced rhythm</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#preExcitation">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#preExcitation">
+    <rdfs:label>(PREX</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#preExcitation">
+    <rdfs:comment>Pre-excitation (WPW)</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#sinusBradycardia">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#sinusBradycardia">
+    <rdfs:label>(SBR</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#sinusBradycardia">
+    <rdfs:comment>Sinus bradycardia</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#supraventricularTachyarrhythmia">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#supraventricularTachyarrhythmia">
+    <rdfs:label>(SVTA</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#supraventricularTachyarrhythmia">
+    <rdfs:comment>Supraventricular tachyarrhythmia</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTrigeminy">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTrigeminy">
+    <rdfs:label>(T</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTrigeminy">
+    <rdfs:comment>Ventricular trigeminy</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularFlutter">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularFlutter">
+    <rdfs:label>(VFL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularFlutter">
+    <rdfs:comment>Ventricular flutter</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTachycardia">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/physiobank#RhythmChange"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTachycardia">
+    <rdfs:label>(VT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/physiobank#ventricularTachycardia">
+    <rdfs:comment>Ventricular tachycardia</rdfs:comment>
   </rdf:Description>
 </rdf:RDF>
