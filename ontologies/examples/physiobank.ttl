@@ -214,11 +214,6 @@ pbterms:medication
   rdfs:range drug:Medication .
 
 
-
-  a pbterms:AnnotationCode ;
-  a pbterms:BeatAnnotation ;
-
-
 # Beat annotation codes:
 
 pbterms:normalBeat
@@ -525,64 +520,3 @@ pbterms:ventricularTachycardia
   a pbterms:RhythmChange ;
   rdfs:label "(VT" ;
   rdfs:comment "Ventricular tachycardia" .
-
-
-
-
-Notes:
-
-1. Codes SVESC, STCH, and TCH were first introduced in WFDB library version
-   4.0. Codes SYSTOLE, DIASTOLE, and MEASURE were first introduced in WFDB
-   library version 7.0.
-
-2. In MIT and ESC DB 'atr' files, each non-zero bit in the subtyp field
-   indicates that the corresponding signal contains noise (the least
-   significant bit corresponds to signal 0).
-
-3. The aux field contains an ASCII string (with prefixed byte count) describing
-   the rhythm, ST segment, T-wave change, measurement, or the nature of the
-   comment. By convention, the character that follows the byte count in the aux
-   field of a  RHYTHM annotation is '('. See the MIT-BIH Arrhythmia Database
-   Directory for a list of rhythm annotation strings. The most commonly used
-   rhythm annotation strings are:
-
-     String		Description
-     ======  ===========
-     (AB		   Atrial bigeminy
-     (AFIB		 Atrial fibrillation
-     (AFL		  Atrial flutter
-     (B		    Ventricular bigeminy
-     (BII		  Secondary heart block
-     (IVR		  Idioventricular rhythm
-     (N	   	 Normal sinus rhythm
-     (NOD	 	 Nodal (A-V junctional) rhythm
-     (P		    Paced rhythm
-     (PREX		 Pre-excitation (WPW)
-     (SBR		  Sinus bradycardia
-     (SVTA		 Supraventricular tachyarrhythmia
-     (T	   	 Ventricular trigeminy
-     (VFL	 	 Ventricular flutter
-     (VT     Ventricular tachycardia
-
-
-4. Codes WFON, WFOFF, PWAVE, TWAVE, and UWAVE were first introduced in DB
-   library version 8.3. The 'p' mnemonic now assigned to PWAVE was formerly
-   assigned to NAPC, and the 't' mnemonic now assigned to TWAVE was formerly
-   assigned to TCH. The obsolete codes PQ (designating the PQ junction) and JPT
-   (designating the J-point) are still defined in '<wfdb/ecgcodes.h>', but are
-   identical to WFON and WFOFF respectively.
-
-5. The LINK code was first introduced in WFDB library version 9.6. The aux
-   field of a  LINK annotation contains a URL (a uniform resource locator, in
-   the form 'http://machine.name/some/data', suitable for passing to a Web
-   browser such as Netscape or Mosaic). LINK annotations may be used to
-   associate extended text, images, or other data with an annotation file. If
-   the aux field contains any whitespace, text following the first whitespace
-   is taken as descriptive text to be displayed by a WFDB browser such as WAVE.
-
-The annotation codes in the table above are the predefined values of the anntyp
-field in a WFDB_Annotation. Other values in the range of 1 to ACMAX (defined in
-'<wfdb/ecgcodes.h>') are legal but do not have preassigned meanings. The
-constant NOTQRS, also defined in '<wfdb/ecgcodes.h>', is not a legal value for
-anntyp, but is a possible output of the macros discussed below.
-
