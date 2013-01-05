@@ -25,13 +25,7 @@
     <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cl</uome-core:unitSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Centilitre">
-    <uome-core:unitTerm rdf:resource="http://www.biosignalml.org/ontologies/examples/unit#CentilitreTerm"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Centilitre">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentilitreTerm">
-    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurementVocabulary"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid2">
     <uome-core:withUnit1 rdf:resource="http://www.biosignalml.org/ontologies/examples/unit#Centilitre"/>
@@ -52,13 +46,7 @@
     <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cl/min</uome-core:unitSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentilitrePerMinute">
-    <uome-core:unitTerm rdf:resource="http://www.biosignalml.org/ontologies/examples/unit#CentilitrePerMinuteTerm"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentilitrePerMinute">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentilitrePerMinuteTerm">
-    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurementVocabulary"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid3">
     <uome-core:withUnit1 rdf:resource="http://www.sbpax.org/uome/list.owl#Decilitre"/>
@@ -79,13 +67,7 @@
     <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dl/min</uome-core:unitSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#DecilitrePerMinute">
-    <uome-core:unitTerm rdf:resource="http://www.biosignalml.org/ontologies/examples/unit#DecilitrePerMinuteTerm"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#DecilitrePerMinute">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#DecilitrePerMinuteTerm">
-    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurementVocabulary"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid4">
     <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.35559</uome-core:withFactor>
@@ -106,12 +88,27 @@
     <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mmH2O</uome-core:unitSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWater">
-    <uome-core:unitTerm rdf:resource="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWaterTerm"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWater">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWaterTerm">
-    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurementVocabulary"/>
+  <rdf:Description rdf:nodeID="genid5">
+    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.735559</uome-core:withFactor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Torr"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
+    <uome-core:derivedBy rdf:nodeID="genid5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
+    <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centimetres of water</uome-core:unitName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
+    <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cmH2O</uome-core:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
 </rdf:RDF>
