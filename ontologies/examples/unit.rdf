@@ -70,16 +70,37 @@
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid4">
+    <uome-core:withUnit1 rdf:resource="http://www.sbpax.org/uome/list.owl#Litre"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <uome-core:withUnit2 rdf:resource="http://www.sbpax.org/uome/list.owl#Minute"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#QuotientExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#LitrePerMinute">
+    <uome-core:derivedBy rdf:nodeID="genid4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#LitrePerMinute">
+    <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">litre per minute</uome-core:unitName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#LitrePerMinute">
+    <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">l/min</uome-core:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#LitrePerMinute">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
     <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.35559</uome-core:withFactor>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="genid4">
+  <rdf:Description rdf:nodeID="genid5">
     <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Torr"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="genid4">
+  <rdf:Description rdf:nodeID="genid5">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWater">
-    <uome-core:derivedBy rdf:nodeID="genid4"/>
+    <uome-core:derivedBy rdf:nodeID="genid5"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWater">
     <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">millimetres of water</uome-core:unitName>
@@ -90,17 +111,17 @@
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#MillimetresOfWater">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="genid5">
+  <rdf:Description rdf:nodeID="genid6">
     <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.735559</uome-core:withFactor>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="genid5">
+  <rdf:Description rdf:nodeID="genid6">
     <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Torr"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="genid5">
+  <rdf:Description rdf:nodeID="genid6">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
-    <uome-core:derivedBy rdf:nodeID="genid5"/>
+    <uome-core:derivedBy rdf:nodeID="genid6"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
     <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">centimetres of water</uome-core:unitName>

@@ -43,6 +43,17 @@ unit:DecilitrePerMinute
     a uome-core:UnitOfMeasurement .
 
 
+unit:LitrePerMinute
+    uome-core:derivedBy [
+        uome-core:withUnit1 uome-list:Litre ;
+        uome-core:withUnit2 uome-list:Minute ;
+        a uome-core:QuotientExpression
+    ] ;
+    uome-core:unitName "litre per minute"^^xmls:string ;
+    uome-core:unitSymbol "l/min"^^xmls:string ;
+    a uome-core:UnitOfMeasurement .
+
+
 unit:MillimetresOfWater
     uome-core:derivedBy [
         uome-core:withFactor 7.35559 ;
