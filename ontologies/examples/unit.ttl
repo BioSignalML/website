@@ -64,7 +64,6 @@ unit:MillimetresOfWater
     uome-core:unitSymbol "mmH2O"^^xmls:string ;
     a uome-core:UnitOfMeasurement .
 
-
 unit:CentimetresOfWater
     uome-core:derivedBy [
         uome-core:withFactor 0.735559 ;
@@ -73,5 +72,25 @@ unit:CentimetresOfWater
     ] ;
     uome-core:unitName "centimetres of water"^^xmls:string ;
     uome-core:unitSymbol "cmH2O"^^xmls:string ;
+    a uome-core:UnitOfMeasurement .
+
+unit:Bar
+    uome-core:derivedBy [
+        uome-core:withFactor 100000 ;
+        uome-core:withUnit uome-list:Pascal ;
+        a uome-core:ScalingExpression
+    ] ;
+    uome-core:unitName "bar"^^xmls:string ;
+    uome-core:unitSymbol "bar"^^xmls:string ;
+    a uome-core:UnitOfMeasurement .
+
+unit:Millibar
+    uome-core:derivedBy [
+        uome-core:withFactor 100 ;
+        uome-core:withUnit uome-list:Pascal ;
+        a uome-core:ScalingExpression
+    ] ;
+    uome-core:unitName "millibar"^^xmls:string ;
+    uome-core:unitSymbol "mbar"^^xmls:string ;
     a uome-core:UnitOfMeasurement .
 
