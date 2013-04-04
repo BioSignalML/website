@@ -2,7 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix bsml: <http://www.biosignalml.org/ontologies/2011/04/biosignalml#> .
 @prefix drug: <http://www.biosignalml.org/ontologies/examples/drug#> .
 
@@ -12,22 +12,22 @@
 <http://www.biosignalml.org/ontologies/examples/physiobank> a owl:Ontology .
 
 
-dcterms:description a owl:AnnotationProperty .
+dct:description a owl:AnnotationProperty .
 
 
 
 pbterms:age
   rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  dcterms:description "The age, in years, of a patient." ;
+  dct:description "The age, in years, of a patient." ;
   rdfs:range xsd:double .
 
 
 pbterms:AnnM
-  dcterms:description "A Physiobank machine generated annotation." ;
+  dct:description "A Physiobank machine generated annotation." ;
   a bsml:SignalType .
 
 pbterms:AnnR
-  dcterms:description "A Physiobank reference annotation." ;
+  dct:description "A Physiobank reference annotation." ;
   a bsml:SignalType .
 
 pbterms:Annotator
@@ -35,7 +35,7 @@ pbterms:Annotator
 
 pbterms:annotator
   rdf:type owl:FunctionalProperty, owl:ObjectProperty ;
-  dcterms:description "The annotator used to generate an annoation signal." ;
+  dct:description "The annotator used to generate an annoation signal." ;
   rdfs:range pbterms:Annotator .
 
 pbterms:al
@@ -167,13 +167,13 @@ pbterms:AnnotationData
 
 pbterms:count
   rdf:type owl:DatatypeProperty, owl:FunctionalProperty ;
-  dcterms:description "The number of discrete things, for example Events." ;
+  dct:description "The number of discrete things, for example Events." ;
   rdfs:range xsd:integer .
 
 pbterms:database
-  dcterms:description "The PhysioBank database the recording is part of." ;
+  dct:description "The PhysioBank database the recording is part of." ;
   rdfs:domain bsml:Recording ;
-  rdfs:subPropertyOf dcterms:isPartOf ;
+  rdfs:subPropertyOf dct:isPartOf ;
   rdf:type owl:ObjectProperty .
 
 
@@ -182,7 +182,7 @@ pbterms:Gender
 
 pbterms:gender
   rdf:type owl:FunctionalProperty, owl:ObjectProperty ;
-  dcterms:description "The gender of a patient." ;
+  dct:description "The gender of a patient." ;
   rdfs:range pbterms:Gender .
 
 pbterms:Female
@@ -204,13 +204,13 @@ pbterms:Info
 
 pbterms:info
   rdf:type owl:ObjectProperty ;
-  dcterms:description "Additional information about a recording." ;
+  dct:description "Additional information about a recording." ;
   rdfs:range pbterms:Info .
 
 
 pbterms:medication
   rdf:type owl:ObjectProperty ;
-  dcterms:description "A drug prescribed to a patient." ;
+  dct:description "A drug prescribed to a patient." ;
   rdfs:range drug:Medication .
 
 

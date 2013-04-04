@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:bsml="http://www.biosignalml.org/ontologies/2011/04/biosignalml#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sleep="http://www.biosignalml.org/ontologies/examples/sleep#">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Sleep">
+    <rdfs:label>Asleep</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Sleep">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Sleep">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdfs:label>Awake</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+    <rdfs:label>Aroused</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+    <rdfs:label>Apnoea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+    <rdfs:label>Hypopnoea</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Flowlimit">
+    <rdfs:label>Flow limitation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Flowlimit">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Flowlimit">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
+    <rdfs:label>Sleep stage 1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
+    <rdfs:label>Sleep stage 2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
+    <rdfs:label>Sleep stage 3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
+    <rdfs:label>REM sleep</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <rdfs:label>Sleep stage 4</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <owl:sameAs rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#REM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#Awake"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid2">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#Sleep"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid3">
+    <rdf:rest rdf:nodeID="genid2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid1">
+    <owl:distinctMembers rdf:nodeID="genid3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#REM"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid5">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#Stage3"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid6">
+    <rdf:rest rdf:nodeID="genid5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#Stage2"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:rest rdf:nodeID="genid6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:first rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#Stage1"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:rest rdf:nodeID="genid7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid4">
+    <owl:distinctMembers rdf:nodeID="genid8"/>
+  </rdf:Description>
+</rdf:RDF>

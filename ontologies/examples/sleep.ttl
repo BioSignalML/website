@@ -1,0 +1,72 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix bsml: <http://www.biosignalml.org/ontologies/2011/04/biosignalml#> .
+
+@prefix sleep:	<http://www.biosignalml.org/ontologies/examples/sleep#> .
+
+
+<http://www.biosignalml.org/ontologies/examples/sleep>
+  a owl:Ontology .
+
+
+sleep:Sleep
+  rdfs:label "Asleep" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Wake
+  rdfs:label "Awake" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Arousa
+  rdfs:label "Aroused" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:apnoea
+  rdfs:label "Apnoea" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:hypopnoea
+  rdfs:label "Hypopnoea" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Flowlimit
+  rdfs:label "Flow limitation" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+
+sleep:Stage1
+  rdfs:label "Sleep stage 1" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Stage2
+  rdfs:label "Sleep stage 2" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Stage3
+  rdfs:label "Sleep stage 3" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:REM
+  rdfs:label "REM sleep" ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Stage4
+  rdfs:label "Sleep stage 4" ;
+  owl:sameAs sleep:REM ;
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+      sleep:Sleep
+      sleep:Awake
+      ) .
+
+[]
+  a owl:AllDifferent ;
+  owl:distinctMembers (
+      sleep:Stage1
+      sleep:Stage2
+      sleep:Stage3
+      sleep:REM
+      ) .
