@@ -56,8 +56,8 @@ unit:LitrePerMinute
 
 unit:MillimetresOfWater
     uome-core:derivedBy [
-        uome-core:withFactor 7.35559 ;
-        uome-core:withUnit uome-list:Torr ;
+        uome-core:withFactor 980.665 ;
+        uome-core:withUnit uome-list:Pascal ;
         a uome-core:ScalingExpression
     ] ;
     uome-core:unitName "millimetres of water"^^xmls:string ;
@@ -66,8 +66,8 @@ unit:MillimetresOfWater
 
 unit:CentimetresOfWater
     uome-core:derivedBy [
-        uome-core:withFactor 0.735559 ;
-        uome-core:withUnit uome-list:Torr ;
+        uome-core:withFactor 98.0665 ;
+        uome-core:withUnit uome-list:Pascal ;
         a uome-core:ScalingExpression
     ] ;
     uome-core:unitName "centimetres of water"^^xmls:string ;
