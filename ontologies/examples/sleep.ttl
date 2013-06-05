@@ -13,19 +13,15 @@ sleep:Sleep
   rdfs:label "Asleep" ;
   a bsml:SemanticTag, owl:NamedIndividual .
 
-sleep:Wake
-  rdfs:label "Awake" ;
-  a bsml:SemanticTag, owl:NamedIndividual .
-
-sleep:Arousa
+sleep:Arousal
   rdfs:label "Aroused" ;
   a bsml:SemanticTag, owl:NamedIndividual .
 
-sleep:apnoea
+sleep:Apnoea
   rdfs:label "Apnoea" ;
   a bsml:SemanticTag, owl:NamedIndividual .
 
-sleep:hypopnoea
+sleep:Hypopnoea
   rdfs:label "Hypopnoea" ;
   a bsml:SemanticTag, owl:NamedIndividual .
 
@@ -34,26 +30,39 @@ sleep:Flowlimit
   a bsml:SemanticTag, owl:NamedIndividual .
 
 
+sleep:SleepStage
+  a owl:Class .
+
+sleep:Wake
+  rdfs:label "Awake" ;
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
+
 sleep:Stage1
   rdfs:label "Sleep stage 1" ;
-  a bsml:SemanticTag, owl:NamedIndividual .
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
 
 sleep:Stage2
   rdfs:label "Sleep stage 2" ;
-  a bsml:SemanticTag, owl:NamedIndividual .
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
 
 sleep:Stage3
   rdfs:label "Sleep stage 3" ;
-  a bsml:SemanticTag, owl:NamedIndividual .
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Delta
+  rdfs:label "Delta sleep" ;
+  rdfs:comment "In 2007, Delta sleep was classified to be the same as Stage 3" ;
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
 
 sleep:REM
   rdfs:label "REM sleep" ;
-  a bsml:SemanticTag, owl:NamedIndividual .
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
 
 sleep:Stage4
   rdfs:label "Sleep stage 4" ;
   owl:sameAs sleep:REM ;
-  a bsml:SemanticTag, owl:NamedIndividual .
+  rdfs:comment "Stage 4 is another name for REM sleep" ;
+  a sleep:SleepStage, bsml:SemanticTag, owl:NamedIndividual .
 
 []
   a owl:AllDifferent ;
@@ -70,3 +79,20 @@ sleep:Stage4
       sleep:Stage3
       sleep:REM
       ) .
+
+
+## The following are for Minerva events...
+sleep:Neurological_Respiratory_Arousal
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Respiratory_Cent_Apnea
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Respiratory_Cent_Hypopnea
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Respiratory_Obs_Apnea
+  a bsml:SemanticTag, owl:NamedIndividual .
+
+sleep:Respiratory_Obs_Hypopnea
+  a bsml:SemanticTag, owl:NamedIndividual .
