@@ -91,10 +91,10 @@
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid5">
-    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.35559</uome-core:withFactor>
+    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">980.665</uome-core:withFactor>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid5">
-    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Torr"/>
+    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Pascal"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid5">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
@@ -112,10 +112,10 @@
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid6">
-    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.735559</uome-core:withFactor>
+    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98.0665</uome-core:withFactor>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid6">
-    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Torr"/>
+    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Pascal"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid6">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
@@ -130,6 +130,48 @@
     <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cmH2O</uome-core:unitSymbol>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#CentimetresOfWater">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100000</uome-core:withFactor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Pascal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid7">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Bar">
+    <uome-core:derivedBy rdf:nodeID="genid7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Bar">
+    <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bar</uome-core:unitName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Bar">
+    <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bar</uome-core:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Bar">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <uome-core:withFactor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</uome-core:withFactor>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <uome-core:withUnit rdf:resource="http://www.sbpax.org/uome/list.owl#Pascal"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="genid8">
+    <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#ScalingExpression"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Millibar">
+    <uome-core:derivedBy rdf:nodeID="genid8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Millibar">
+    <uome-core:unitName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">millibar</uome-core:unitName>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Millibar">
+    <uome-core:unitSymbol rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mbar</uome-core:unitSymbol>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/unit#Millibar">
     <rdf:type rdf:resource="http://www.sbpax.org/uome/core.owl#UnitOfMeasurement"/>
   </rdf:Description>
 </rdf:RDF>

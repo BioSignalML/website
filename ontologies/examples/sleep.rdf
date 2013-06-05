@@ -12,40 +12,31 @@
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Sleep">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
-    <rdfs:label>Awake</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
-    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousal">
     <rdfs:label>Aroused</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousal">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousa">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Arousal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Apnoea">
     <rdfs:label>Apnoea</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Apnoea">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#apnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Apnoea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Hypopnoea">
     <rdfs:label>Hypopnoea</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Hypopnoea">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#hypopnoea">
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Hypopnoea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Flowlimit">
@@ -57,8 +48,26 @@
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Flowlimit">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdfs:label>Awake</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Wake">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
     <rdfs:label>Sleep stage 1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage1">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
@@ -70,6 +79,9 @@
     <rdfs:label>Sleep stage 2</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage2">
@@ -79,13 +91,34 @@
     <rdfs:label>Sleep stage 3</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage3">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Delta">
+    <rdfs:label>Delta sleep</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Delta">
+    <rdfs:comment>In 2007, Delta sleep was classified to be the same as Stage 3</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Delta">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Delta">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Delta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
     <rdfs:label>REM sleep</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#REM">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
@@ -98,6 +131,12 @@
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
     <owl:sameAs rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#REM"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <rdfs:comment>Stage 4 is another name for REM sleep</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/examples/sleep#SleepStage"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Stage4">
     <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
@@ -152,5 +191,35 @@
   </rdf:Description>
   <rdf:Description rdf:nodeID="genid4">
     <owl:distinctMembers rdf:nodeID="genid8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Neurological_Respiratory_Arousal">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Neurological_Respiratory_Arousal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Cent_Apnea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Cent_Apnea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Cent_Hypopnea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Cent_Hypopnea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Obs_Apnea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Obs_Apnea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Obs_Hypopnea">
+    <rdf:type rdf:resource="http://www.biosignalml.org/ontologies/2011/04/biosignalml#SemanticTag"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.biosignalml.org/ontologies/examples/sleep#Respiratory_Obs_Hypopnea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
 </rdf:RDF>
