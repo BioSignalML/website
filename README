@@ -2,3 +2,5 @@ Need to ensure /etc/mime.types (on OS/X /etc/apache2/mime.types) has
 entries for rdf --> application/rdf+xml and ttl --> text/turtle in order
 for these files to be served with the correct Content-type by Tornado's
 static file handler.
+
+Also need gz --> application/x-gzip.
