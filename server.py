@@ -54,10 +54,12 @@ if __name__ == '__main__':
   define('port', 8085)
 
   static_path = os.path.join(os.path.dirname(__file__), 'static')
+  binaries_path = os.path.join(os.path.dirname(__file__), 'binaries')
   ontology_path = os.path.join(os.path.dirname(__file__), 'ontologies')
 
   application = tornado.web.Application([
       (r'/ontologies/(.*)', Ontologies,                    {'path': ontology_path }),
+      (r'/binaries/(.*)',   tornado.web.StaticFileHandler, {'path': binaries_path }),
       (r'/static/(.*)',     tornado.web.StaticFileHandler, {'path': static_path }),
       (r'/(.*)',            WebPages),
       (r'',                 WebPages),      
