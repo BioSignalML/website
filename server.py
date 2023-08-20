@@ -10,8 +10,9 @@
 
 """A web.py application powered by Tornado"""
 
-import os
+import asyncio
 import logging
+import os
 
 import tornado.httpserver
 import tornado.web
@@ -42,37 +43,36 @@ class WebPages(tornado.web.RequestHandler):
 
   def get(self, name=None):
   #------------------------
-    self.redirect('http://code.google.com/p/biosignalml/')
-    #render('webpage.html', title='Testing...')
+    #self.redirect('http://code.google.com/p/biosignalml/')
+    self.render('webpage.html', title='BiosignalML...')
 
 
-if __name__ == '__main__':
-#=========================
-
+async def main():
+#================
   define('debug', False)
   define('host', 'localhost')
   define('port', 8085)
 
-  static_path = os.path.join(os.path.dirname(__file__), 'static')
-  binaries_path = os.path.join(os.path.dirname(__file__), 'binaries')
-  ontology_path = os.path.join(os.path.dirname(__file__), 'ontologies')
-
+  settings = {
+      'static_path': os.path.join(os.path.dirname(__file__), 'static'),
+      'ontology_path': os.path.join(os.path.dirname(__file__), 'ontologies'),
+      'xsrf_cookies': True,
+      'gzip': True,
+      'template_path': 'templates',
+      'debug': options.debug,
+  }
   application = tornado.web.Application([
-      (r'/ontologies/(.*)', Ontologies,                    {'path': ontology_path }),
-      (r'/binaries/(.*)',   tornado.web.StaticFileHandler, {'path': binaries_path }),
-      (r'/static/(.*)',     tornado.web.StaticFileHandler, {'path': static_path }),
+      (r'/ontologies/(.*)', Ontologies, dict(path=settings['ontology_path'])),
+      (r'/static/(.*)',     tornado.web.StaticFileHandler, dict(path=settings['static_path'])),
       (r'/(.*)',            WebPages),
-      (r'',                 WebPages),      
-      ],
-    gzip = True,
-    template_path = 'templates',
-    debug = options.debug,
-    )
+      (r'',                 WebPages),
+      ], **settings)
 
   application.listen(options.port, options.host, xheaders=True)
   logging.info('Starting http://%s:%d/', options.host, options.port)
 
-  try:
-    tornado.ioloop.IOLoop.instance().start()
-  except KeyboardInterrupt:
-    pass
+  await asyncio.Event().wait()
+
+if __name__ == '__main__':
+#=========================
+    asyncio.run(main())
