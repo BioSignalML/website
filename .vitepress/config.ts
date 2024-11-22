@@ -8,6 +8,9 @@ export default defineConfig({
 
   srcDir: 'src',
 
+  // For deployment to GitHub Pages
+  base: '/website/',
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
