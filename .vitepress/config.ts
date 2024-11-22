@@ -12,11 +12,36 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'About', link: '/about' }
+      { text: 'Specifications', link: '/specifications/' },
+      { text: 'Software', link: '/software/' },
+      { text: 'About', link: '/about/' }
     ],
 
     search: {
       provider: 'local'
+    },
+
+    sidebar: {
+      '/specifications/': [
+        {
+          text: 'Specifications',
+          collapsed: true,
+          items: [
+            { text: 'Ontology', link: '/specifications/ontology' },
+            { text: 'HDF5 File Format', link: '/specifications/hdf5' }
+          ]
+        }
+      ],
+      '/software/': [
+        {
+          text: 'Software',
+          collapsed: true,
+          items: [
+            { text: 'Packages', link: '/software/packages' },
+            { text: 'Examples', link: '/software/examples' }
+          ]
+        }
+      ]
     }
   }
 })
