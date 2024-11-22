@@ -1,3 +1,11 @@
 :root {
-  --vp-home-hero-name-color: red;
+  --vp-home-hero-name-color: #88F;
+}
+
+.VPNavBarTitle {
+  --vp-c-text-1: var(--vp-home-hero-name-color)
+}
+
+header.VPNav {
+  background-color: var(--vp-c-bg-soft);
 }
