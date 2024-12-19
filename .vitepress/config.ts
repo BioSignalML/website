@@ -59,6 +59,9 @@ export default defineConfigWithTheme<ThemeConfig>({
   cleanUrls: true,
   metaChunk: true,
 
+  // For deployment to GitHub Pages
+  base: '/website/',
+
   markdown: {
     config: (md) => md.use(markdownItDeflist)
   },
