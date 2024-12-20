@@ -59,8 +59,8 @@ export default defineConfigWithTheme<ThemeConfig>({
   cleanUrls: true,
   metaChunk: true,
 
-  // For deployment to GitHub Pages
-  base: '/website/',
+  // For deployment as biosignalml.org
+  base: '/',
 
   markdown: {
     config: (md) => md.use(markdownItDeflist)
