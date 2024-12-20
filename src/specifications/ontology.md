@@ -1,19 +1,18 @@
 # BioSignalML Ontology
 
 The BioSignalML Ontology defines concepts used in the storage and exchange of biosignals,
-along with terms for common biosignal metadata elements. The following shows the relationships between these concepts:
+along with terms for common biosignal metadata elements. The following shows the relationships
+between these concepts:
 
 <figure>
     <img src="./images/BSMLOntology.png" alt="The BioSignalML Ontology"/>
     <figcaption>The BioSignalML Ontology.</figcaption>
 </figure>
 
-## Documentation
 
+## Sources and documentation
 
-A human readable version of the ontology is at https://www.biosignalml.org/ontologies/2025/12/biosignalml.html (the page opens in a new window).
+The ontology's sources along with a full change history is on [GitHub](https://github.com/BioSignalML/ontology), with human-readable
+documentation [here](https://www.biosignalml.org/ontologies/2024/12/biosignalml.html), and an RDF/Turtle version [here](https://www.biosignalml.org/ontologies/2024/12/biosignalml.ttl).
 
-
-## RDF version
-
-An RDF (Turtle) version of the ontology is at https://www.biosignalml.org/ontologies/2025/12/biosignalml.
+N.B. The above links each open in a new browser window.
