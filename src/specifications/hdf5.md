@@ -177,7 +177,5 @@ with values having the same meaning as defined for signal datasets [above](#sect
 
 ## Units of measurement
 
-Units of measurement **SHOULD** be specified using pre-defined unit URIs
-from the Units of Measurement Expressions List at
-<http://www.sbpax.org/uome/list.html>, and if not, then as URIs of
-resources defined using the UOME Core vocabulary.
+Units of measurement **MUST** be specified using valid codes from the [Unified
+Code for Units of Measure](https://ucum.org/) (UCUM) code system.
