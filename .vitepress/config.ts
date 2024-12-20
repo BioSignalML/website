@@ -14,8 +14,7 @@ import markdownItDeflist from 'markdown-it-deflist'
 
 const specificationItems = [
   { text: 'BioSignalML Ontology', link: '/specifications/ontology' },
-  { text: 'HDF5 File Layout', link: '/specifications/hdf5' },
-  { text: 'Streaming Format', link: '/specifications/stream' }
+  { text: 'HDF5 File Layout', link: '/specifications/hdf5' }
 ]
 
 const softwareItems = [
