@@ -3,6 +3,10 @@
   --vp-button-brand-bg: var(--vp-home-hero-name-color);
 }
 
+.main {
+  justify-content: left !important;
+}
+
 .VPNavBarMenuGroup {
   margin-right: 16px;
 }

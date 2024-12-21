@@ -5,7 +5,6 @@ layout: home
 hero:
   name: BioSignalML
   tagline: an abstract model for time-series data
-  image: /public/img/todo.png
   actions:
     - theme: brand
       text: About BioSignalML
