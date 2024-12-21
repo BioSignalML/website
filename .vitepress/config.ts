@@ -69,6 +69,8 @@ export default defineConfigWithTheme<ThemeConfig>({
     hostname: 'https://biosignalml.org'
   },
 
+  appearance: true,
+
   themeConfig: {
     nav,
     sidebar,
