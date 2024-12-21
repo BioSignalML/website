@@ -20,7 +20,6 @@ features:
     link: /specifications/hdf5
   - icon: 🛠️
     title: Software Packages
-    details: Lorem ipsum...
+    details: Open source libraries, applications, and utilities.
     link: /software
 ---
-

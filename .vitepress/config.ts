@@ -18,7 +18,7 @@ const specificationItems = [
 ]
 
 const softwareItems = [
-  { text: 'Overview', link: '/software/index' }
+  { text: 'Software Packages', link: '/software/index' }
 ]
 
 //==============================================================================
